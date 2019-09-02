@@ -1,0 +1,3159 @@
+"DOTAUnits"
+{
+	"Version"	"1"
+
+	//=================================================================================
+	// Kings
+	//=================================================================================
+	"npc_tactics_king_radiant"
+	{										
+		"Model"						"models/creeps/lane_creeps/creep_radiant_hulk/creep_radiant_ancient_hulk.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"Hero_WarlockGolem"
+		"Level"						"10"
+		"ModelScale" 				"1.4"
+
+		"Ability1"					"tactics_king_healing"
+
+		"ArmorPhysical"				"0"
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"200"
+		"AttackDamageMax"			"200"
+		"AttackRate"				"1.7"
+		"AttackAnimationPoint"		"0.26"
+		"AttackAcquisitionRange"	"300"
+		"AttackRange"				"300"
+		"ProjectileModel"			""
+		"ProjectileSpeed"			"0"
+
+		"ConsideredHero"			"1"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"RingRadius"				"128"
+		"HealthBarOffset"			"310"
+
+		"BountyXP"					"0"
+		"BountyGoldMin"				"0"
+		"BountyGoldMax"				"0"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"550"
+		"MovementTurnRate"			"1.0"
+
+		"StatusHealth"				"800"
+		"StatusHealthRegen"			"0"
+		"StatusMana"				"0"
+		"StatusManaRegen"			"0"
+
+		"VisionDaytimeRange"		"4000"
+		"VisionNighttimeRange"		"4000"
+
+		"HasInventory"				"1"
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		"MovementType"				"Queen"
+		"MovementRange"				"2"
+
+		"MovementLines"
+		{
+			"1"						"warlock_golem_wargol_move_01"
+			"2"						"warlock_golem_wargol_move_02"
+			"3"						"warlock_golem_wargol_move_03"
+			"4"						"warlock_golem_wargol_move_04"
+			"5"						"warlock_golem_wargol_move_05"
+			"6"						"warlock_golem_wargol_move_06"
+			"7"						"warlock_golem_wargol_move_07"
+			"8"						"warlock_golem_wargol_move_08"
+			"9"						"warlock_golem_wargol_move_09"
+			"10"					"warlock_golem_wargol_move_10"
+			"11"					"warlock_golem_wargol_move_11"
+			"12"					"warlock_golem_wargol_move_12"
+			"13"					"warlock_golem_wargol_move_13"
+			"14"					"warlock_golem_wargol_move_14"
+			"15"					"warlock_golem_wargol_move_15"
+			"16"					"warlock_golem_wargol_move_16"
+			"17"					"warlock_golem_wargol_move_17"
+			"18"					"warlock_golem_wargol_move_18"
+			"19"					"warlock_golem_wargol_move_19"
+			"20"					"warlock_golem_wargol_move_20"
+			"count"					"20"
+		}
+
+		"AttackLines"
+		{
+			"1"						"warlock_golem_wargol_attack_01"
+			"2"						"warlock_golem_wargol_attack_02"
+			"3"						"warlock_golem_wargol_attack_03"
+			"4"						"warlock_golem_wargol_attack_04"
+			"5"						"warlock_golem_wargol_attack_05"
+			"6"						"warlock_golem_wargol_attack_06"
+			"count"					"6"
+		}
+	}
+
+	"npc_tactics_king_dire"
+	{										
+		"Model"						"models/creeps/lane_creeps/creep_dire_hulk/creep_dire_ancient_hulk.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"Hero_WarlockGolem"
+		"Level"						"10"
+		"ModelScale" 				"1.4"
+
+		"Ability1"					"tactics_king_healing"
+
+		"ArmorPhysical"				"0"
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"200"
+		"AttackDamageMax"			"200"
+		"AttackRate"				"1.7"
+		"AttackAnimationPoint"		"0.26"
+		"AttackAcquisitionRange"	"300"
+		"AttackRange"				"300"
+		"ProjectileModel"			""
+		"ProjectileSpeed"			"0"
+
+		"ConsideredHero"			"1"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"RingRadius"				"128"
+		"HealthBarOffset"			"310"
+
+		"BountyXP"					"0"
+		"BountyGoldMin"				"0"
+		"BountyGoldMax"				"0"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"550"
+		"MovementTurnRate"			"1.0"
+
+		"StatusHealth"				"800"
+		"StatusHealthRegen"			"0"
+		"StatusMana"				"0"
+		"StatusManaRegen"			"0"
+
+		"VisionDaytimeRange"		"4000"
+		"VisionNighttimeRange"		"4000"
+
+		"HasInventory"				"1"
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		"MovementType"				"Queen"
+		"MovementRange"				"2"
+
+		"MovementLines"
+		{
+			"1"						"warlock_golem_wargol_move_01"
+			"2"						"warlock_golem_wargol_move_02"
+			"3"						"warlock_golem_wargol_move_03"
+			"4"						"warlock_golem_wargol_move_04"
+			"5"						"warlock_golem_wargol_move_05"
+			"6"						"warlock_golem_wargol_move_06"
+			"7"						"warlock_golem_wargol_move_07"
+			"8"						"warlock_golem_wargol_move_08"
+			"9"						"warlock_golem_wargol_move_09"
+			"10"					"warlock_golem_wargol_move_10"
+			"11"					"warlock_golem_wargol_move_11"
+			"12"					"warlock_golem_wargol_move_12"
+			"13"					"warlock_golem_wargol_move_13"
+			"14"					"warlock_golem_wargol_move_14"
+			"15"					"warlock_golem_wargol_move_15"
+			"16"					"warlock_golem_wargol_move_16"
+			"17"					"warlock_golem_wargol_move_17"
+			"18"					"warlock_golem_wargol_move_18"
+			"19"					"warlock_golem_wargol_move_19"
+			"20"					"warlock_golem_wargol_move_20"
+			"count"					"20"
+		}
+
+		"AttackLines"
+		{
+			"1"						"warlock_golem_wargol_attack_01"
+			"2"						"warlock_golem_wargol_attack_02"
+			"3"						"warlock_golem_wargol_attack_03"
+			"4"						"warlock_golem_wargol_attack_04"
+			"5"						"warlock_golem_wargol_attack_05"
+			"6"						"warlock_golem_wargol_attack_06"
+			"count"					"6"
+		}
+	}
+
+	//=================================================================================
+	//	Pawns
+	//=================================================================================
+	"npc_tactics_pawn_radiant"
+	{										
+		"Model"						"models/creeps/lane_creeps/creep_radiant_melee/radiant_melee.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"Hero_PhantomLancer"
+		"Level"						"1"
+		"ModelScale" 				"1.45"
+
+		"Ability1"					"tactics_pawn_attack"
+
+		"ArmorPhysical"				"0"
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"200"
+		"AttackDamageMax"			"200"
+		"AttackRate"				"1.7"
+		"AttackAnimationPoint"		"0.467"
+		"AttackAcquisitionRange"	"300"
+		"AttackRange"				"300"
+		"ProjectileModel"			""
+		"ProjectileSpeed"			"0"
+
+		"ConsideredHero"			"0"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"RingRadius"				"128"
+		"HealthBarOffset"			"205"
+
+		"BountyXP"					"0"
+		"BountyGoldMin"				"0"
+		"BountyGoldMax"				"0"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"550"
+		"MovementTurnRate"			"1.0"
+
+		"StatusHealth"				"450"
+		"StatusHealthRegen"			"0"
+		"StatusMana"				"0"
+		"StatusManaRegen"			"0"
+
+		"VisionDaytimeRange"		"800"
+		"VisionNighttimeRange"		"800"
+
+		"HasInventory"				"1"
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		"MovementType"				"Pawn"
+		"MovementRange"				"3"
+
+		"MovementLines"
+		{
+			"1"						"n_creep_junglestalkerCommon.Death"
+			"2"						"n_creep_koboldTaskmaster.Death"
+			"3"						"n_creep_kobolds.Death"
+			"4"						"n_creep_SatyrSmall.Death"
+			"5"						"n_creep_centaurOutrunner.Death"
+			"6"						"n_creep_dragonspawnSorc.Death"
+			"7"						"n_creep_gnoll.Death"
+			"8"						"n_creep_Skeleton.Death"
+			"count"					"8"
+		}
+
+		"AttackLines"
+		{
+			"1"						"n_creep_junglestalkerCommon.Death"
+			"2"						"n_creep_koboldTaskmaster.Death"
+			"3"						"n_creep_kobolds.Death"
+			"4"						"n_creep_SatyrSmall.Death"
+			"5"						"n_creep_centaurOutrunner.Death"
+			"6"						"n_creep_dragonspawnSorc.Death"
+			"7"						"n_creep_gnoll.Death"
+			"8"						"n_creep_Skeleton.Death"
+			"count"					"8"
+		}
+	}
+
+	"npc_tactics_super_pawn_radiant"
+	{										
+		"Model"						"models/creeps/lane_creeps/creep_radiant_melee/radiant_melee_mega.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"Hero_PhantomLancer"
+		"Level"						"1"
+		"ModelScale" 				"1.9"
+
+		"Ability1"					"tactics_pawn_attack"
+
+		"ArmorPhysical"				"0"
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"300"
+		"AttackDamageMax"			"300"
+		"AttackRate"				"1.7"
+		"AttackAnimationPoint"		"0.467"
+		"AttackAcquisitionRange"	"300"
+		"AttackRange"				"300"
+		"ProjectileModel"			""
+		"ProjectileSpeed"			"0"
+
+		"ConsideredHero"			"0"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"RingRadius"				"128"
+		"HealthBarOffset"			"230"
+
+		"BountyXP"					"0"
+		"BountyGoldMin"				"0"
+		"BountyGoldMax"				"0"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"550"
+		"MovementTurnRate"			"1.0"
+
+		"StatusHealth"				"900"
+		"StatusHealthRegen"			"0"
+		"StatusMana"				"0"
+		"StatusManaRegen"			"0"
+
+		"VisionDaytimeRange"		"800"
+		"VisionNighttimeRange"		"800"
+
+		"HasInventory"				"1"
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		"MovementType"				"Queen"
+		"MovementRange"				"8"
+
+		"MovementLines"
+		{
+			"1"						"n_creep_junglestalkerCommon.Death"
+			"2"						"n_creep_koboldTaskmaster.Death"
+			"3"						"n_creep_kobolds.Death"
+			"4"						"n_creep_SatyrSmall.Death"
+			"5"						"n_creep_centaurOutrunner.Death"
+			"6"						"n_creep_dragonspawnSorc.Death"
+			"7"						"n_creep_gnoll.Death"
+			"8"						"n_creep_Skeleton.Death"
+			"count"					"8"
+		}
+
+		"AttackLines"
+		{
+			"1"						"n_creep_junglestalkerCommon.Death"
+			"2"						"n_creep_koboldTaskmaster.Death"
+			"3"						"n_creep_kobolds.Death"
+			"4"						"n_creep_SatyrSmall.Death"
+			"5"						"n_creep_centaurOutrunner.Death"
+			"6"						"n_creep_dragonspawnSorc.Death"
+			"7"						"n_creep_gnoll.Death"
+			"8"						"n_creep_Skeleton.Death"
+			"count"					"8"
+		}
+	}
+
+	"npc_tactics_pawn_dire"
+	{										
+		"Model"						"models/creeps/lane_creeps/creep_bad_melee/creep_bad_melee.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"Hero_PhantomLancer"
+		"Level"						"1"
+		"ModelScale" 				"1.45"
+
+		"Ability1"					"tactics_pawn_attack"
+
+		"ArmorPhysical"				"0"
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"200"
+		"AttackDamageMax"			"200"
+		"AttackRate"				"1.7"
+		"AttackAnimationPoint"		"0.467"
+		"AttackAcquisitionRange"	"300"
+		"AttackRange"				"300"
+		"ProjectileModel"			""
+		"ProjectileSpeed"			"0"
+
+		"ConsideredHero"			"0"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"RingRadius"				"128"
+		"HealthBarOffset"			"205"
+
+		"BountyXP"					"0"
+		"BountyGoldMin"				"0"
+		"BountyGoldMax"				"0"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"550"
+		"MovementTurnRate"			"1.0"
+
+		"StatusHealth"				"450"
+		"StatusHealthRegen"			"0"
+		"StatusMana"				"0"
+		"StatusManaRegen"			"0"
+
+		"VisionDaytimeRange"		"800"
+		"VisionNighttimeRange"		"800"
+
+		"HasInventory"				"1"
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		"MovementType"				"Pawn"
+		"MovementRange"				"3"
+
+		"MovementLines"
+		{
+			"1"						"n_creep_junglestalkerCommon.Death"
+			"2"						"n_creep_koboldTaskmaster.Death"
+			"3"						"n_creep_kobolds.Death"
+			"4"						"n_creep_SatyrSmall.Death"
+			"5"						"n_creep_centaurOutrunner.Death"
+			"6"						"n_creep_dragonspawnSorc.Death"
+			"7"						"n_creep_gnoll.Death"
+			"8"						"n_creep_Skeleton.Death"
+			"count"					"8"
+		}
+
+		"AttackLines"
+		{
+			"1"						"n_creep_junglestalkerCommon.Death"
+			"2"						"n_creep_koboldTaskmaster.Death"
+			"3"						"n_creep_kobolds.Death"
+			"4"						"n_creep_SatyrSmall.Death"
+			"5"						"n_creep_centaurOutrunner.Death"
+			"6"						"n_creep_dragonspawnSorc.Death"
+			"7"						"n_creep_gnoll.Death"
+			"8"						"n_creep_Skeleton.Death"
+			"count"					"8"
+		}
+	}
+
+	"npc_tactics_super_pawn_dire"
+	{										
+		"Model"						"models/creeps/lane_creeps/creep_bad_melee/creep_bad_melee_mega.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"Hero_PhantomLancer"
+		"Level"						"1"
+		"ModelScale" 				"1.9"
+
+		"Ability1"					"tactics_pawn_attack"
+
+		"ArmorPhysical"				"0"
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"300"
+		"AttackDamageMax"			"300"
+		"AttackRate"				"1.7"
+		"AttackAnimationPoint"		"0.467"
+		"AttackAcquisitionRange"	"300"
+		"AttackRange"				"300"
+		"ProjectileModel"			""
+		"ProjectileSpeed"			"0"
+
+		"ConsideredHero"			"0"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"RingRadius"				"128"
+		"HealthBarOffset"			"230"
+
+		"BountyXP"					"0"
+		"BountyGoldMin"				"0"
+		"BountyGoldMax"				"0"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"550"
+		"MovementTurnRate"			"1.0"
+
+		"StatusHealth"				"900"
+		"StatusHealthRegen"			"0"
+		"StatusMana"				"0"
+		"StatusManaRegen"			"0"
+
+		"VisionDaytimeRange"		"800"
+		"VisionNighttimeRange"		"800"
+
+		"HasInventory"				"1"
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		"MovementType"				"Queen"
+		"MovementRange"				"8"
+
+		"MovementLines"
+		{
+			"1"						"n_creep_junglestalkerCommon.Death"
+			"2"						"n_creep_koboldTaskmaster.Death"
+			"3"						"n_creep_kobolds.Death"
+			"4"						"n_creep_SatyrSmall.Death"
+			"5"						"n_creep_centaurOutrunner.Death"
+			"6"						"n_creep_dragonspawnSorc.Death"
+			"7"						"n_creep_gnoll.Death"
+			"8"						"n_creep_Skeleton.Death"
+			"count"					"8"
+		}
+
+		"AttackLines"
+		{
+			"1"						"n_creep_junglestalkerCommon.Death"
+			"2"						"n_creep_koboldTaskmaster.Death"
+			"3"						"n_creep_kobolds.Death"
+			"4"						"n_creep_SatyrSmall.Death"
+			"5"						"n_creep_centaurOutrunner.Death"
+			"6"						"n_creep_dragonspawnSorc.Death"
+			"7"						"n_creep_gnoll.Death"
+			"8"						"n_creep_Skeleton.Death"
+			"count"					"8"
+		}
+	}
+
+	//=================================================================================
+	//	Units
+	//=================================================================================
+	"npc_tactics_zeus"
+	{										
+		"Model"						"models/heroes/zeus/zeus.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"Hero_Zuus"
+		"Level"						"1"
+		"ModelScale" 				"1.9"
+
+		"Ability1"					"tactics_arc_lightning"
+
+		"ArmorPhysical"				"0"
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"250"
+		"AttackDamageMax"			"250"
+		"AttackRate"				"1.7"
+		"AttackAnimationPoint"		"0.45"
+		"AttackAcquisitionRange"	"300"
+		"AttackRange"				"300"
+		"ProjectileModel"			""
+		"ProjectileSpeed"			"0"
+
+		"ConsideredHero"			"1"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"RingRadius"				"128"
+		"HealthBarOffset"			"300"
+
+		"BountyXP"					"0"
+		"BountyGoldMin"				"0"
+		"BountyGoldMax"				"0"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"550"
+		"MovementTurnRate"			"1.0"
+
+		"StatusHealth"				"900"
+		"StatusHealthRegen"			"0"
+		"StatusMana"				"0"
+		"StatusManaRegen"			"0"
+
+		"VisionDaytimeRange"		"800"
+		"VisionNighttimeRange"		"800"
+
+		"HasInventory"				"1"
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"	{	"ItemDef"	"589"	}	// arms
+				"Wearable2"	{	"ItemDef"	"593"	}	// weapon
+				"Wearable3"	{	"ItemDef"	"604"	}	// head
+				"Wearable4"	{	"ItemDef"	"605"	}	// effects
+				"Wearable5"	{	"ItemDef"	"606"	}	// belt
+				"Wearable6"	{	"ItemDef"	"607"	}	// back
+			}
+		}
+
+		"MovementType"				"Rook"
+		"MovementRange"				"5"
+
+		"MovementLines"
+		{
+			"1"						"zuus_zuus_move_01"
+			"2"						"zuus_zuus_move_02"
+			"3"						"zuus_zuus_move_03"
+			"4"						"zuus_zuus_move_04"
+			"5"						"zuus_zuus_move_05"
+			"6"						"zuus_zuus_move_06"
+			"7"						"zuus_zuus_move_07"
+			"8"						"zuus_zuus_move_09"
+			"9"						"zuus_zuus_move_10"
+			"10"					"zuus_zuus_move_11"
+			"count"					"10"
+		}
+
+		"AttackLines"
+		{
+			"1"						"zuus_zuus_attack_01"
+			"2"						"zuus_zuus_attack_02"
+			"3"						"zuus_zuus_attack_03"
+			"4"						"zuus_zuus_attack_04"
+			"5"						"zuus_zuus_attack_05"
+			"6"						"zuus_zuus_attack_06"
+			"7"						"zuus_zuus_attack_07"
+			"8"						"zuus_zuus_attack_08"
+			"9"						"zuus_zuus_attack_09"
+			"count"					"9"
+		}
+	}
+
+	"npc_tactics_centaur"
+	{										
+		"Model"						"models/heroes/centaur/centaur.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"Hero_Centaur"
+		"Level"						"1"
+		"ModelScale" 				"1.25"
+
+		"Ability1"					"tactics_hoof_stomp"
+
+		"ArmorPhysical"				"0"
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"250"
+		"AttackDamageMax"			"250"
+		"AttackRate"				"1.7"
+		"AttackAnimationPoint"		"0.3"
+		"AttackAcquisitionRange"	"300"
+		"AttackRange"				"300"
+		"ProjectileModel"			""
+		"ProjectileSpeed"			"0"
+
+		"ConsideredHero"			"1"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"RingRadius"				"128"
+		"HealthBarOffset"			"360"
+
+		"BountyXP"					"0"
+		"BountyGoldMin"				"0"
+		"BountyGoldMax"				"0"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"550"
+		"MovementTurnRate"			"1.0"
+
+		"StatusHealth"				"1000"
+		"StatusHealthRegen"			"0"
+		"StatusMana"				"0"
+		"StatusManaRegen"			"0"
+
+		"VisionDaytimeRange"		"800"
+		"VisionNighttimeRange"		"800"
+
+		"HasInventory"				"1"
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"	{	"ItemDef"	"358"	}	// axe
+				"Wearable2"	{	"ItemDef"	"359"	}	// head
+				"Wearable3"	{	"ItemDef"	"360"	}	// shoulders
+				"Wearable4"	{	"ItemDef"	"361"	}	// belt
+				"Wearable5"	{	"ItemDef"	"362"	}	// trophies
+				"Wearable6"	{	"ItemDef"	"363"	}	// bracer
+				"Wearable7"	{	"ItemDef"	"364"	}	// tail
+			}
+		}
+
+		"MovementType"				"Rook"
+		"MovementRange"				"7"
+
+		"MovementLines"
+		{
+			"1"						"centaur_cent_move_01"
+			"2"						"centaur_cent_move_02"
+			"3"						"centaur_cent_move_03"
+			"4"						"centaur_cent_move_04"
+			"5"						"centaur_cent_move_05"
+			"6"						"centaur_cent_move_06"
+			"7"						"centaur_cent_move_07"
+			"8"						"centaur_cent_move_08"
+			"9"						"centaur_cent_move_09"
+			"10"					"centaur_cent_move_10"
+			"11"					"centaur_cent_move_11"
+			"12"					"centaur_cent_move_12"
+			"13"					"centaur_cent_move_13"
+			"14"					"centaur_cent_move_14"
+			"15"					"centaur_cent_move_15"
+			"16"					"centaur_cent_move_16"
+			"17"					"centaur_cent_move_17"
+			"18"					"centaur_cent_move_18"
+			"19"					"centaur_cent_move_19"
+			"20"					"centaur_cent_move_20"
+			"21"					"centaur_cent_move_21"
+			"22"					"centaur_cent_move_22"
+			"count"					"22"
+		}
+
+		"AttackLines"
+		{
+			"1"						"centaur_cent_attack_01"
+			"2"						"centaur_cent_attack_02"
+			"3"						"centaur_cent_attack_03"
+			"4"						"centaur_cent_attack_04"
+			"5"						"centaur_cent_attack_05"
+			"6"						"centaur_cent_attack_06"
+			"7"						"centaur_cent_attack_07"
+			"8"						"centaur_cent_attack_08"
+			"9"						"centaur_cent_attack_09"
+			"10"					"centaur_cent_attack_10"
+			"11"					"centaur_cent_attack_11"
+			"count"					"11"
+		}
+	}
+
+	"npc_tactics_venomancer"
+	{										
+		"Model"						"models/heroes/venomancer/venomancer.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"Hero_Venomancer"
+		"Level"						"1"
+		"ModelScale" 				"1.2"
+
+		"Ability1"					"tactics_poison_nova"
+
+		"ArmorPhysical"				"0"
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"250"
+		"AttackDamageMax"			"250"
+		"AttackRate"				"1.7"
+		"AttackAnimationPoint"		"0.3"
+		"AttackAcquisitionRange"	"300"
+		"AttackRange"				"300"
+		"ProjectileModel"			""
+		"ProjectileSpeed"			"0"
+
+		"ConsideredHero"			"1"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"RingRadius"				"128"
+		"HealthBarOffset"			"275"
+
+		"BountyXP"					"0"
+		"BountyGoldMin"				"0"
+		"BountyGoldMax"				"0"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"550"
+		"MovementTurnRate"			"1.0"
+
+		"StatusHealth"				"850"
+		"StatusHealthRegen"			"0"
+		"StatusMana"				"0"
+		"StatusManaRegen"			"0"
+
+		"VisionDaytimeRange"		"800"
+		"VisionNighttimeRange"		"800"
+
+		"HasInventory"				"1"
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"	{	"ItemDef"	"291"	}	// jaw
+				"Wearable2"	{	"ItemDef"	"292"	}	// shoulders
+				"Wearable3"	{	"ItemDef"	"293"	}	// arms
+				"Wearable4"	{	"ItemDef"	"294"	}	// tail
+				"Wearable5"	{	"ItemDef"	"518"	}	// effects
+			}
+		}
+
+		"MovementType"				"Bishop"
+		"MovementRange"				"6"
+
+		"MovementLines"
+		{
+			"1"						"venomancer_venm_move_01"
+			"2"						"venomancer_venm_move_02"
+			"3"						"venomancer_venm_move_03"
+			"4"						"venomancer_venm_move_04"
+			"5"						"venomancer_venm_move_05"
+			"6"						"venomancer_venm_move_06"
+			"7"						"venomancer_venm_move_07"
+			"8"						"venomancer_venm_move_08"
+			"9"						"venomancer_venm_move_09"
+			"10"					"venomancer_venm_move_10"
+			"11"					"venomancer_venm_move_11"
+			"12"					"venomancer_venm_move_12"
+			"13"					"venomancer_venm_move_13"
+			"14"					"venomancer_venm_move_14"
+			"15"					"venomancer_venm_move_15"
+			"16"					"venomancer_venm_move_16"
+			"17"					"venomancer_venm_move_17"
+			"count"					"17"
+		}
+
+		"AttackLines"
+		{
+			"1"						"venomancer_venm_attack_01"
+			"2"						"venomancer_venm_attack_02"
+			"3"						"venomancer_venm_attack_03"
+			"4"						"venomancer_venm_attack_04"
+			"5"						"venomancer_venm_attack_05"
+			"6"						"venomancer_venm_attack_06"
+			"7"						"venomancer_venm_attack_07"
+			"8"						"venomancer_venm_attack_08"
+			"9"						"venomancer_venm_attack_09"
+			"10"					"venomancer_venm_attack_10"
+			"11"					"venomancer_venm_attack_11"
+			"count"					"11"
+		}
+	}
+
+	"npc_tactics_lion"
+	{										
+		"Model"						"models/heroes/lion/lion.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"Hero_Lion"
+		"Level"						"1"
+		"ModelScale" 				"1.4"
+
+		"Ability1"					"tactics_earth_spike"
+
+		"ArmorPhysical"				"0"
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"200"
+		"AttackDamageMax"			"200"
+		"AttackRate"				"1.7"
+		"AttackAnimationPoint"		"0.43"
+		"AttackAcquisitionRange"	"300"
+		"AttackRange"				"300"
+		"ProjectileModel"			""
+		"ProjectileSpeed"			"0"
+
+		"ConsideredHero"			"1"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"RingRadius"				"128"
+		"HealthBarOffset"			"280"
+
+		"BountyXP"					"0"
+		"BountyGoldMin"				"0"
+		"BountyGoldMax"				"0"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"550"
+		"MovementTurnRate"			"1.0"
+
+		"StatusHealth"				"1000"
+		"StatusHealthRegen"			"0"
+		"StatusMana"				"0"
+		"StatusManaRegen"			"0"
+
+		"VisionDaytimeRange"		"800"
+		"VisionNighttimeRange"		"800"
+
+		"HasInventory"				"1"
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"	{	"ItemDef"	"365"	}	// head
+				"Wearable2"	{	"ItemDef"	"366"	}	// cape
+				"Wearable3"	{	"ItemDef"	"368"	}	// shoulders
+				"Wearable4"	{	"ItemDef"	"369"	}	// demon arm
+				"Wearable5"	{	"ItemDef"	"572"	}	// head
+			}
+		}
+
+		"MovementType"				"Queen"
+		"MovementRange"				"6"
+
+		"MovementLines"
+		{
+			"1"						"lion_lion_move_01"
+			"2"						"lion_lion_move_02"
+			"3"						"lion_lion_move_03"
+			"4"						"lion_lion_move_04"
+			"5"						"lion_lion_move_05"
+			"6"						"lion_lion_move_06"
+			"7"						"lion_lion_move_07"
+			"8"						"lion_lion_move_08"
+			"9"						"lion_lion_move_09"
+			"10"					"lion_lion_move_10"
+			"11"					"lion_lion_move_11"
+			"12"					"lion_lion_move_12"
+			"13"					"lion_lion_move_13"
+			"count"					"13"
+		}
+
+		"AttackLines"
+		{
+			"1"						"lion_lion_attack_01"
+			"2"						"lion_lion_attack_02"
+			"3"						"lion_lion_attack_03"
+			"4"						"lion_lion_attack_04"
+			"5"						"lion_lion_attack_05"
+			"6"						"lion_lion_attack_06"
+			"7"						"lion_lion_attack_07"
+			"8"						"lion_lion_attack_08"
+			"9"						"lion_lion_attack_09"
+			"10"					"lion_lion_attack_10"
+			"11"					"lion_lion_attack_11"
+			"12"					"lion_lion_attack_12"
+			"13"					"lion_lion_attack_13"
+			"14"					"lion_lion_attack_14"
+			"count"					"14"
+		}
+	}
+
+	"npc_tactics_ursa"
+	{										
+		"Model"						"models/heroes/ursa/ursa.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"Hero_Ursa"
+		"Level"						"1"
+		"ModelScale" 				"1.35"
+
+		"Ability1"					"tactics_fury_swipes"
+
+		"ArmorPhysical"				"0"
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"200"
+		"AttackDamageMax"			"200"
+		"AttackRate"				"1.7"
+		"AttackAnimationPoint"		"0.3"
+		"AttackAcquisitionRange"	"300"
+		"AttackRange"				"300"
+		"ProjectileModel"			""
+		"ProjectileSpeed"			"0"
+
+		"ConsideredHero"			"1"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"RingRadius"				"128"
+		"HealthBarOffset"			"250"
+
+		"BountyXP"					"0"
+		"BountyGoldMin"				"0"
+		"BountyGoldMax"				"0"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"550"
+		"MovementTurnRate"			"1.0"
+
+		"StatusHealth"				"1100"
+		"StatusHealthRegen"			"0"
+		"StatusMana"				"0"
+		"StatusManaRegen"			"0"
+
+		"VisionDaytimeRange"		"800"
+		"VisionNighttimeRange"		"800"
+
+		"HasInventory"				"1"
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"	{	"ItemDef"	"85"	}	//
+				"Wearable2"	{	"ItemDef"	"86"	}	//
+				"Wearable3"	{	"ItemDef"	"87"	}	//
+				"Wearable4"	{	"ItemDef"	"88"	}	//
+				"Wearable5"	{	"ItemDef"	"584"	}	//
+			}
+		}
+
+		"MovementType"				"Rook"
+		"MovementRange"				"6"
+
+		"MovementLines"
+		{
+			"1"						"ursa_ursa_move_01"
+			"2"						"ursa_ursa_move_02"
+			"3"						"ursa_ursa_move_03"
+			"4"						"ursa_ursa_move_04"
+			"5"						"ursa_ursa_move_05"
+			"6"						"ursa_ursa_move_06"
+			"7"						"ursa_ursa_move_07"
+			"8"						"ursa_ursa_move_08"
+			"9"						"ursa_ursa_move_09"
+			"10"					"ursa_ursa_move_10"
+			"11"					"ursa_ursa_move_11"
+			"12"					"ursa_ursa_move_12"
+			"13"					"ursa_ursa_move_13"
+			"14"					"ursa_ursa_move_14"
+			"15"					"ursa_ursa_move_15"
+			"16"					"ursa_ursa_move_16"
+			"17"					"ursa_ursa_move_17"
+			"18"					"ursa_ursa_move_18"
+			"19"					"ursa_ursa_move_19"
+			"20"					"ursa_ursa_move_20"
+			"21"					"ursa_ursa_move_21"
+			"22"					"ursa_ursa_move_22"
+			"23"					"ursa_ursa_move_23"
+			"24"					"ursa_ursa_move_24"
+			"25"					"ursa_ursa_move_25"
+			"26"					"ursa_ursa_move_26"
+			"27"					"ursa_ursa_move_27"
+			"28"					"ursa_ursa_move_28"
+			"count"					"28"
+		}
+
+		"AttackLines"
+		{
+			"1"						"ursa_ursa_attack_01"
+			"2"						"ursa_ursa_attack_02"
+			"3"						"ursa_ursa_attack_03"
+			"4"						"ursa_ursa_attack_04"
+			"5"						"ursa_ursa_attack_05"
+			"6"						"ursa_ursa_attack_06"
+			"7"						"ursa_ursa_attack_07"
+			"8"						"ursa_ursa_attack_08"
+			"9"						"ursa_ursa_attack_09"
+			"10"					"ursa_ursa_attack_10"
+			"11"					"ursa_ursa_attack_11"
+			"12"					"ursa_ursa_attack_12"
+			"13"					"ursa_ursa_attack_13"
+			"14"					"ursa_ursa_attack_14"
+			"15"					"ursa_ursa_attack_15"
+			"16"					"ursa_ursa_attack_16"
+			"17"					"ursa_ursa_attack_17"
+			"18"					"ursa_ursa_attack_18"
+			"19"					"ursa_ursa_attack_19"
+			"count"					"19"
+		}
+	}
+
+	"npc_tactics_sniper"
+	{										
+		"Model"						"models/heroes/sniper/sniper.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"Hero_Sniper"
+		"Level"						"1"
+		"ModelScale" 				"1.5"
+
+		"Ability1"					"tactics_assassinate"
+
+		"ArmorPhysical"				"0"
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"200"
+		"AttackDamageMax"			"200"
+		"AttackRate"				"1.7"
+		"AttackAnimationPoint"		"0.17"
+		"AttackAcquisitionRange"	"300"
+		"AttackRange"				"300"
+		"ProjectileModel"			""
+		"ProjectileSpeed"			"0"
+
+		"ConsideredHero"			"1"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"RingRadius"				"128"
+		"HealthBarOffset"			"250"
+
+		"BountyXP"					"0"
+		"BountyGoldMin"				"0"
+		"BountyGoldMax"				"0"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"550"
+		"MovementTurnRate"			"1.0"
+
+		"StatusHealth"				"800"
+		"StatusHealthRegen"			"0"
+		"StatusMana"				"0"
+		"StatusManaRegen"			"0"
+
+		"VisionDaytimeRange"		"800"
+		"VisionNighttimeRange"		"800"
+
+		"HasInventory"				"1"
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"	{	"ItemDef"	"281"	}	//
+				"Wearable2"	{	"ItemDef"	"282"	}	//
+				"Wearable3"	{	"ItemDef"	"283"	}	//
+				"Wearable4"	{	"ItemDef"	"284"	}	//
+				"Wearable5"	{	"ItemDef"	"285"	}	//
+			}
+		}
+
+		"MovementType"				"Rook"
+		"MovementRange"				"4"
+
+		"MovementLines"
+		{
+			"1"						"sniper_snip_move_01"
+			"2"						"sniper_snip_move_02"
+			"3"						"sniper_snip_move_03"
+			"4"						"sniper_snip_move_04"
+			"5"						"sniper_snip_move_05"
+			"6"						"sniper_snip_move_07"
+			"7"						"sniper_snip_move_08"
+			"8"						"sniper_snip_move_09"
+			"9"						"sniper_snip_move_10"
+			"10"					"sniper_snip_move_11"
+			"11"					"sniper_snip_move_12"
+			"12"					"sniper_snip_move_13"
+			"13"					"sniper_snip_move_14"
+			"14"					"sniper_snip_move_15"
+			"15"					"sniper_snip_move_16"
+			"16"					"sniper_snip_move_17"
+			"17"					"sniper_snip_move_18"
+			"18"					"sniper_snip_move_19"
+			"19"					"sniper_snip_move_20"
+			"20"					"sniper_snip_move_21"
+			"21"					"sniper_snip_move_22"
+			"22"					"sniper_snip_move_23"
+			"23"					"sniper_snip_move_24"
+			"24"					"sniper_snip_move_25"
+			"25"					"sniper_snip_move_26"
+			"26"					"sniper_snip_move_27"
+			"27"					"sniper_snip_move_28"
+			"28"					"sniper_snip_move_29"
+			"count"					"28"
+		}
+
+		"AttackLines"
+		{
+			"1"						"sniper_snip_attack_01"
+			"2"						"sniper_snip_attack_02"
+			"3"						"sniper_snip_attack_03"
+			"4"						"sniper_snip_attack_04"
+			"5"						"sniper_snip_attack_05"
+			"6"						"sniper_snip_attack_06"
+			"7"						"sniper_snip_attack_07"
+			"8"						"sniper_snip_attack_08"
+			"9"						"sniper_snip_attack_09"
+			"10"					"sniper_snip_attack_10"
+			"11"					"sniper_snip_attack_11"
+			"12"					"sniper_snip_attack_12"
+			"count"					"12"
+		}
+	}
+
+	"npc_tactics_tusk"
+	{										
+		"Model"						"models/heroes/tuskarr/tuskarr.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"Hero_Tusk"
+		"Level"						"1"
+		"ModelScale" 				"1.45"
+
+		"Ability1"					"tactics_walrus_kick"
+
+		"ArmorPhysical"				"0"
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"250"
+		"AttackDamageMax"			"250"
+		"AttackRate"				"1.7"
+		"AttackAnimationPoint"		"0.17"
+		"AttackAcquisitionRange"	"300"
+		"AttackRange"				"300"
+		"ProjectileModel"			""
+		"ProjectileSpeed"			"0"
+
+		"ConsideredHero"			"1"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"RingRadius"				"128"
+		"HealthBarOffset"			"250"
+
+		"BountyXP"					"0"
+		"BountyGoldMin"				"0"
+		"BountyGoldMax"				"0"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"550"
+		"MovementTurnRate"			"1.0"
+
+		"StatusHealth"				"1150"
+		"StatusHealthRegen"			"0"
+		"StatusMana"				"0"
+		"StatusManaRegen"			"0"
+
+		"VisionDaytimeRange"		"800"
+		"VisionNighttimeRange"		"800"
+
+		"HasInventory"				"1"
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"	{	"ItemDef"	"413"	}	// Harness
+				"Wearable2"	{	"ItemDef"	"414"	}	// Armor
+				"Wearable3"	{	"ItemDef"	"415"	}	// Mace
+				"Wearable4"	{	"ItemDef"	"416"	}	// Cape
+				"Wearable5"	{	"ItemDef"	"417"	}	// Tusks
+				"Wearable6"	{	"ItemDef"	"418"	}	// Head
+				"Wearable7"	{	"ItemDef"	"541"	}	// Effects
+			}
+		}
+
+		"MovementType"				"Queen"
+		"MovementRange"				"6"
+
+		"MovementLines"
+		{
+			"1"						"tusk_tusk_move_01"
+			"2"						"tusk_tusk_move_02"
+			"3"						"tusk_tusk_move_03"
+			"4"						"tusk_tusk_move_04"
+			"5"						"tusk_tusk_move_05"
+			"6"						"tusk_tusk_move_06"
+			"7"						"tusk_tusk_move_07"
+			"8"						"tusk_tusk_move_08"
+			"9"						"tusk_tusk_move_09"
+			"10"					"tusk_tusk_move_10"
+			"11"					"tusk_tusk_move_11"
+			"12"					"tusk_tusk_move_12"
+			"13"					"tusk_tusk_move_13"
+			"14"					"tusk_tusk_move_14"
+			"15"					"tusk_tusk_move_15"
+			"16"					"tusk_tusk_move_16"
+			"17"					"tusk_tusk_move_17"
+			"18"					"tusk_tusk_move_18"
+			"19"					"tusk_tusk_move_19"
+			"20"					"tusk_tusk_move_20"
+			"21"					"tusk_tusk_move_21"
+			"22"					"tusk_tusk_move_22"
+			"23"					"tusk_tusk_move_23"
+			"24"					"tusk_tusk_move_24"
+			"25"					"tusk_tusk_move_25"
+			"26"					"tusk_tusk_move_26"
+			"count"					"26"
+		}
+
+		"AttackLines"
+		{
+			"1"						"tusk_tusk_attack_01"
+			"2"						"tusk_tusk_attack_02"
+			"3"						"tusk_tusk_attack_03"
+			"4"						"tusk_tusk_attack_04"
+			"5"						"tusk_tusk_attack_05"
+			"6"						"tusk_tusk_attack_06"
+			"7"						"tusk_tusk_attack_07"
+			"8"						"tusk_tusk_attack_08"
+			"9"						"tusk_tusk_attack_09"
+			"10"					"tusk_tusk_attack_10"
+			"11"					"tusk_tusk_attack_11"
+			"12"					"tusk_tusk_attack_12"
+			"13"					"tusk_tusk_attack_13"
+			"14"					"tusk_tusk_attack_14"
+			"count"					"14"
+		}
+	}
+
+	"npc_tactics_abaddon"
+	{										
+		"Model"						"models/heroes/abaddon/abaddon.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"Hero_Abaddon"
+		"Level"						"1"
+		"ModelScale" 				"1.3"
+
+		"Ability1"					"tactics_shield"
+
+		"ArmorPhysical"				"0"
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"250"
+		"AttackDamageMax"			"250"
+		"AttackRate"				"1.7"
+		"AttackAnimationPoint"		"0.56"
+		"AttackAcquisitionRange"	"300"
+		"AttackRange"				"300"
+		"ProjectileModel"			""
+		"ProjectileSpeed"			"0"
+
+		"ConsideredHero"			"1"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"RingRadius"				"128"
+		"HealthBarOffset"			"270"
+
+		"BountyXP"					"0"
+		"BountyGoldMin"				"0"
+		"BountyGoldMax"				"0"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"550"
+		"MovementTurnRate"			"1.0"
+
+		"StatusHealth"				"800"
+		"StatusHealthRegen"			"0"
+		"StatusMana"				"0"
+		"StatusManaRegen"			"0"
+
+		"VisionDaytimeRange"		"800"
+		"VisionNighttimeRange"		"800"
+
+		"HasInventory"				"1"
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"	{	"ItemDef"	"454"	}	// Weapon
+				"Wearable2"	{	"ItemDef"	"455"	}	// Hood
+				"Wearable3"	{	"ItemDef"	"456"	}	// Pauldrons
+				"Wearable4"	{	"ItemDef"	"457"	}	// Cape
+				"Wearable5"	{	"ItemDef"	"458"	}	// Mount
+				"Wearable6"	{	"ItemDef"	"522"	}	// Effects
+			}
+		}
+
+		"MovementType"				"Rook"
+		"MovementRange"				"5"
+
+		"MovementLines"
+		{
+			"1"						"abaddon_abad_move_01"
+			"2"						"abaddon_abad_move_02"
+			"3"						"abaddon_abad_move_03"
+			"4"						"abaddon_abad_move_04"
+			"5"						"abaddon_abad_move_05"
+			"6"						"abaddon_abad_move_06"
+			"7"						"abaddon_abad_move_07"
+			"8"						"abaddon_abad_move_08"
+			"9"						"abaddon_abad_move_09"
+			"10"					"abaddon_abad_move_10"
+			"11"					"abaddon_abad_move_11"
+			"12"					"abaddon_abad_move_12"
+			"13"					"abaddon_abad_move_13"
+			"14"					"abaddon_abad_move_14"
+			"15"					"abaddon_abad_move_15"
+			"16"					"abaddon_abad_move_16"
+			"17"					"abaddon_abad_move_17"
+			"18"					"abaddon_abad_move_18"
+			"19"					"abaddon_abad_move_19"
+			"20"					"abaddon_abad_move_20"
+			"21"					"abaddon_abad_move_21"
+			"22"					"abaddon_abad_move_22"
+			"count"					"22"
+		}
+
+		"AttackLines"
+		{
+			"1"						"abaddon_abad_attack_01"
+			"2"						"abaddon_abad_attack_02"
+			"3"						"abaddon_abad_attack_03"
+			"4"						"abaddon_abad_attack_04"
+			"5"						"abaddon_abad_attack_05"
+			"6"						"abaddon_abad_attack_06"
+			"7"						"abaddon_abad_attack_07"
+			"8"						"abaddon_abad_attack_08"
+			"9"						"abaddon_abad_attack_09"
+			"10"					"abaddon_abad_attack_10"
+			"11"					"abaddon_abad_attack_11"
+			"12"					"abaddon_abad_attack_12"
+			"13"					"abaddon_abad_attack_13"
+			"count"					"13"
+		}
+	}
+
+	"npc_tactics_dark_seer"
+	{										
+		"Model"						"models/heroes/dark_seer/dark_seer.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"Hero_Darkseer"
+		"Level"						"1"
+		"ModelScale" 				"1.3"
+
+		"Ability1"					"tactics_surge"
+
+		"ArmorPhysical"				"0"
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"200"
+		"AttackDamageMax"			"200"
+		"AttackRate"				"1.7"
+		"AttackAnimationPoint"		"0.59"
+		"AttackAcquisitionRange"	"300"
+		"AttackRange"				"300"
+		"ProjectileModel"			""
+		"ProjectileSpeed"			"0"
+
+		"ConsideredHero"			"1"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"RingRadius"				"128"
+		"HealthBarOffset"			"250"
+
+		"BountyXP"					"0"
+		"BountyGoldMin"				"0"
+		"BountyGoldMax"				"0"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"550"
+		"MovementTurnRate"			"1.0"
+
+		"StatusHealth"				"800"
+		"StatusHealthRegen"			"0"
+		"StatusMana"				"0"
+		"StatusManaRegen"			"0"
+
+		"VisionDaytimeRange"		"800"
+		"VisionNighttimeRange"		"800"
+
+		"HasInventory"				"1"
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"	{	"ItemDef"	"348"	}	// Back ring
+				"Wearable2"	{	"ItemDef"	"349"	}	// Bracers
+				"Wearable3"	{	"ItemDef"	"350"	}	// Shoulders
+				"Wearable4"	{	"ItemDef"	"351"	}	// Belt
+				"Wearable5"	{	"ItemDef"	"352"	}	// Hood
+				"Wearable6"	{	"ItemDef"	"524"	}	// Ambient
+			}
+		}
+
+		"MovementType"				"Rook"
+		"MovementRange"				"7"
+
+		"MovementLines"
+		{
+			"1"						"dark_seer_dkseer_move_01"
+			"2"						"dark_seer_dkseer_move_02"
+			"3"						"dark_seer_dkseer_move_03"
+			"4"						"dark_seer_dkseer_move_04"
+			"5"						"dark_seer_dkseer_move_05"
+			"6"						"dark_seer_dkseer_move_06"
+			"7"						"dark_seer_dkseer_move_07"
+			"8"						"dark_seer_dkseer_move_08"
+			"9"						"dark_seer_dkseer_move_09"
+			"10"					"dark_seer_dkseer_move_10"
+			"11"					"dark_seer_dkseer_move_11"
+			"12"					"dark_seer_dkseer_move_12"
+			"13"					"dark_seer_dkseer_move_13"
+			"count"					"13"
+		}
+
+		"AttackLines"
+		{
+			"1"						"dark_seer_dkseer_attack_01"
+			"2"						"dark_seer_dkseer_attack_02"
+			"3"						"dark_seer_dkseer_attack_03"
+			"4"						"dark_seer_dkseer_attack_04"
+			"5"						"dark_seer_dkseer_attack_05"
+			"6"						"dark_seer_dkseer_attack_06"
+			"7"						"dark_seer_dkseer_attack_07"
+			"8"						"dark_seer_dkseer_attack_08"
+			"9"						"dark_seer_dkseer_attack_09"
+			"10"					"dark_seer_dkseer_attack_10"
+			"11"					"dark_seer_dkseer_attack_11"
+			"count"					"11"
+		}
+	}
+
+	"npc_tactics_sand_king"
+	{										
+		"Model"						"models/heroes/sand_king/sand_king.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"Hero_Sandking"
+		"Level"						"1"
+		"ModelScale" 				"1.35"
+
+		"Ability1"					"tactics_burrowstrike"
+
+		"ArmorPhysical"				"0"
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"250"
+		"AttackDamageMax"			"250"
+		"AttackRate"				"1.7"
+		"AttackAnimationPoint"		"0.53"
+		"AttackAcquisitionRange"	"300"
+		"AttackRange"				"300"
+		"ProjectileModel"			""
+		"ProjectileSpeed"			"0"
+
+		"ConsideredHero"			"1"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"RingRadius"				"128"
+		"HealthBarOffset"			"250"
+
+		"BountyXP"					"0"
+		"BountyGoldMin"				"0"
+		"BountyGoldMax"				"0"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"550"
+		"MovementTurnRate"			"1.0"
+
+		"StatusHealth"				"900"
+		"StatusHealthRegen"			"0"
+		"StatusMana"				"0"
+		"StatusManaRegen"			"0"
+
+		"VisionDaytimeRange"		"800"
+		"VisionNighttimeRange"		"800"
+
+		"HasInventory"				"1"
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"	{	"ItemDef"	"180"	}	// Claws
+				"Wearable2"	{	"ItemDef"	"198"	}	// Skull
+				"Wearable3"	{	"ItemDef"	"199"	}	// Legs
+				"Wearable4"	{	"ItemDef"	"200"	}	// Shoulders
+				"Wearable5"	{	"ItemDef"	"201"	}	// Tail
+			}
+		}
+
+		"MovementType"				"Bishop"
+		"MovementRange"				"2"
+
+		"MovementLines"
+		{
+			"1"						"sandking_skg_move_01"
+			"2"						"sandking_skg_move_02"
+			"3"						"sandking_skg_move_03"
+			"4"						"sandking_skg_move_04"
+			"5"						"sandking_skg_move_05"
+			"6"						"sandking_skg_move_06"
+			"7"						"sandking_skg_move_07"
+			"8"						"sandking_skg_move_08"
+			"9"						"sandking_skg_move_09"
+			"10"					"sandking_skg_move_10"
+			"11"					"sandking_skg_move_11"
+			"12"					"sandking_skg_move_12"
+			"13"					"sandking_skg_move_13"
+			"14"					"sandking_skg_move_14"
+			"15"					"sandking_skg_move_15"
+			"16"					"sandking_skg_move_16"
+			"17"					"sandking_skg_move_17"
+			"18"					"sandking_skg_move_18"
+			"19"					"sandking_skg_move_19"
+			"20"					"sandking_skg_move_20"
+			"21"					"sandking_skg_move_21"
+			"22"					"sandking_skg_move_22"
+			"23"					"sandking_skg_move_23"
+			"count"					"23"
+		}
+
+		"AttackLines"
+		{
+			"1"						"sandking_skg_attack_01"
+			"2"						"sandking_skg_attack_02"
+			"3"						"sandking_skg_attack_03"
+			"4"						"sandking_skg_attack_04"
+			"5"						"sandking_skg_attack_05"
+			"6"						"sandking_skg_attack_06"
+			"7"						"sandking_skg_attack_07"
+			"8"						"sandking_skg_attack_08"
+			"9"						"sandking_skg_attack_09"
+			"10"					"sandking_skg_attack_10"
+			"11"					"sandking_skg_attack_11"
+			"12"					"sandking_skg_attack_12"
+			"13"					"sandking_skg_attack_13"
+			"14"					"sandking_skg_attack_14"
+			"15"					"sandking_skg_attack_15"
+			"16"					"sandking_skg_attack_16"
+			"count"					"16"
+		}
+	}
+
+	"npc_tactics_shadow_shaman"
+	{										
+		"Model"						"models/heroes/shadowshaman/shadowshaman.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"Hero_Shadowshaman"
+		"Level"						"1"
+		"ModelScale" 				"1.55"
+
+		"Ability1"					"tactics_serpent_ward"
+
+		"ArmorPhysical"				"0"
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"200"
+		"AttackDamageMax"			"200"
+		"AttackRate"				"1.7"
+		"AttackAnimationPoint"		"0.3"
+		"AttackAcquisitionRange"	"300"
+		"AttackRange"				"300"
+		"ProjectileModel"			""
+		"ProjectileSpeed"			"0"
+
+		"ConsideredHero"			"1"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"RingRadius"				"128"
+		"HealthBarOffset"			"250"
+
+		"BountyXP"					"0"
+		"BountyGoldMin"				"0"
+		"BountyGoldMax"				"0"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"550"
+		"MovementTurnRate"			"1.0"
+
+		"StatusHealth"				"900"
+		"StatusHealthRegen"			"0"
+		"StatusMana"				"0"
+		"StatusManaRegen"			"0"
+
+		"VisionDaytimeRange"		"800"
+		"VisionNighttimeRange"		"800"
+
+		"HasInventory"				"1"
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"	{	"ItemDef"	"246"	}	// Hat
+				"Wearable2"	{	"ItemDef"	"247"	}	// Mantle
+				"Wearable3"	{	"ItemDef"	"248"	}	// Sigil
+				"Wearable4"	{	"ItemDef"	"249"	}	// Baton
+				"Wearable5"	{	"ItemDef"	"250"	}	// Baton
+				"Wearable6"	{	"ItemDef"	"251"	}	// Head
+			}
+		}
+
+		"MovementType"				"Bishop"
+		"MovementRange"				"6"
+
+		"MovementLines"
+		{
+			"1"						"shadowshaman_shad_move_01"
+			"2"						"shadowshaman_shad_move_02"
+			"3"						"shadowshaman_shad_move_03"
+			"4"						"shadowshaman_shad_move_04"
+			"5"						"shadowshaman_shad_move_05"
+			"6"						"shadowshaman_shad_move_06"
+			"7"						"shadowshaman_shad_move_07"
+			"8"						"shadowshaman_shad_move_08"
+			"9"						"shadowshaman_shad_move_09"
+			"10"					"shadowshaman_shad_move_10"
+			"11"					"shadowshaman_shad_move_11"
+			"12"					"shadowshaman_shad_move_12"
+			"13"					"shadowshaman_shad_move_13"
+			"14"					"shadowshaman_shad_move_14"
+			"15"					"shadowshaman_shad_move_15"
+			"16"					"shadowshaman_shad_move_16"
+			"17"					"shadowshaman_shad_move_17"
+			"count"					"17"
+		}
+
+		"AttackLines"
+		{
+			"1"						"shadowshaman_shad_attack_01"
+			"2"						"shadowshaman_shad_attack_02"
+			"3"						"shadowshaman_shad_attack_03"
+			"4"						"shadowshaman_shad_attack_05"
+			"5"						"shadowshaman_shad_attack_06"
+			"6"						"shadowshaman_shad_attack_07"
+			"7"						"shadowshaman_shad_attack_08"
+			"8"						"shadowshaman_shad_attack_09"
+			"9"						"shadowshaman_shad_attack_10"
+			"count"					"9"
+		}
+	}
+
+	"npc_tactics_serpent_ward"
+	{										
+		"Model"						"models/items/shadowshaman/serpent_ward/dotapit_s3_wild_tempest_wards/dotapit_s3_wild_tempest_wards.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"ShadowShaman_Ward"
+		"Level"						"1"
+		"ModelScale" 				"1.45"
+
+		"Ability1"					""
+
+		"ArmorPhysical"				"0"
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"150"
+		"AttackDamageMax"			"150"
+		"AttackRate"				"1.7"
+		"AttackAnimationPoint"		"0.3"
+		"AttackAcquisitionRange"	"300"
+		"AttackRange"				"300"
+		"ProjectileModel"			""
+		"ProjectileSpeed"			"0"
+
+		"ConsideredHero"			"0"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"RingRadius"				"128"
+		"HealthBarOffset"			"205"
+
+		"BountyXP"					"0"
+		"BountyGoldMin"				"0"
+		"BountyGoldMax"				"0"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"
+		"MovementSpeed"				"0"
+		"MovementTurnRate"			"1.0"
+
+		"StatusHealth"				"50"
+		"StatusHealthRegen"			"0"
+		"StatusMana"				"0"
+		"StatusManaRegen"			"0"
+
+		"VisionDaytimeRange"		"800"
+		"VisionNighttimeRange"		"800"
+
+		"HasInventory"				"1"
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		"MovementType"				"Pawn"
+		"MovementRange"				"0"
+
+		"MovementLines"
+		{
+			"1"						""
+			"count"					"1"
+		}
+
+		"AttackLines"
+		{
+			"1"						""
+			"count"					"1"
+		}
+	}
+
+	"npc_tactics_furion"
+	{										
+		"Model"						"models/heroes/furion/furion.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"Hero_Furion"
+		"Level"						"1"
+		"ModelScale" 				"1.4"
+
+		"Ability1"					"tactics_sprout"
+
+		"ArmorPhysical"				"0"
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"200"
+		"AttackDamageMax"			"200"
+		"AttackRate"				"1.7"
+		"AttackAnimationPoint"		"0.4"
+		"AttackAcquisitionRange"	"300"
+		"AttackRange"				"300"
+		"ProjectileModel"			""
+		"ProjectileSpeed"			"0"
+
+		"ConsideredHero"			"1"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"RingRadius"				"128"
+		"HealthBarOffset"			"250"
+
+		"BountyXP"					"0"
+		"BountyGoldMin"				"0"
+		"BountyGoldMax"				"0"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"550"
+		"MovementTurnRate"			"1.0"
+
+		"StatusHealth"				"800"
+		"StatusHealthRegen"			"0"
+		"StatusMana"				"0"
+		"StatusManaRegen"			"0"
+
+		"VisionDaytimeRange"		"800"
+		"VisionNighttimeRange"		"800"
+
+		"HasInventory"				"1"
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"	{	"ItemDef"	"29"	}	// Cape
+				"Wearable2"	{	"ItemDef"	"30"	}	// Beard
+				"Wearable3"	{	"ItemDef"	"31"	}	// Mantle
+				"Wearable4"	{	"ItemDef"	"32"	}	// Bracers
+				"Wearable5"	{	"ItemDef"	"33"	}	// Horns
+				"Wearable6"	{	"ItemDef"	"49"	}	// Staff
+			}
+		}
+
+		"MovementType"				"Bishop"
+		"MovementRange"				"5"
+
+		"MovementLines"
+		{
+			"1"						"furion_furi_move_01"
+			"2"						"furion_furi_move_02"
+			"3"						"furion_furi_move_03"
+			"4"						"furion_furi_move_04"
+			"5"						"furion_furi_move_05"
+			"6"						"furion_furi_move_06"
+			"7"						"furion_furi_move_07"
+			"8"						"furion_furi_move_08"
+			"9"						"furion_furi_move_09"
+			"10"					"furion_furi_move_10"
+			"11"					"furion_furi_move_11"
+			"12"					"furion_furi_move_12"
+			"13"					"furion_furi_move_13"
+			"14"					"furion_furi_move_14"
+			"15"					"furion_furi_move_15"
+			"16"					"furion_furi_move_16"
+			"count"					"16"
+		}
+
+		"AttackLines"
+		{
+			"1"						"furion_furi_attack_01"
+			"2"						"furion_furi_attack_02"
+			"3"						"furion_furi_attack_03"
+			"4"						"furion_furi_attack_04"
+			"5"						"furion_furi_attack_05"
+			"6"						"furion_furi_attack_06"
+			"7"						"furion_furi_attack_07"
+			"8"						"furion_furi_attack_08"
+			"9"						"furion_furi_attack_09"
+			"10"					"furion_furi_attack_10"
+			"11"					"furion_furi_attack_11"
+			"count"					"11"
+		}
+	}
+
+	"npc_tactics_sprout_tree"
+	{										
+		"Model"						"models/props_tree/tree_oak_00.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					""
+		"Level"						"1"
+		"ModelScale" 				"1.25"
+
+		"Ability1"					""
+
+		"ArmorPhysical"				"0"
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"0"
+		"AttackDamageMax"			"0"
+		"AttackRate"				"1.7"
+		"AttackAnimationPoint"		"0.3"
+		"AttackAcquisitionRange"	"300"
+		"AttackRange"				"300"
+		"ProjectileModel"			""
+		"ProjectileSpeed"			"0"
+
+		"ConsideredHero"			"0"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"RingRadius"				"128"
+		"HealthBarOffset"			"205"
+
+		"BountyXP"					"0"
+		"BountyGoldMin"				"0"
+		"BountyGoldMax"				"0"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"
+		"MovementSpeed"				"0"
+		"MovementTurnRate"			"1.0"
+
+		"StatusHealth"				"50"
+		"StatusHealthRegen"			"0"
+		"StatusMana"				"0"
+		"StatusManaRegen"			"0"
+
+		"VisionDaytimeRange"		"800"
+		"VisionNighttimeRange"		"800"
+
+		"HasInventory"				"1"
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		"MovementType"				"Pawn"
+		"MovementRange"				"0"
+
+		"MovementLines"
+		{
+			"1"						""
+			"count"					"1"
+		}
+
+		"AttackLines"
+		{
+			"1"						""
+			"count"					"1"
+		}
+	}
+
+	"npc_tactics_antimage"
+	{										
+		"Model"						"models/heroes/antimage/antimage.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"Hero_Antimage"
+		"Level"						"1"
+		"ModelScale" 				"1.35"
+
+		"Ability1"					"tactics_blink"
+
+		"ArmorPhysical"				"0"
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"250"
+		"AttackDamageMax"			"250"
+		"AttackRate"				"1.7"
+		"AttackAnimationPoint"		"0.3"
+		"AttackAcquisitionRange"	"300"
+		"AttackRange"				"300"
+		"ProjectileModel"			""
+		"ProjectileSpeed"			"0"
+
+		"ConsideredHero"			"1"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"RingRadius"				"128"
+		"HealthBarOffset"			"250"
+
+		"BountyXP"					"0"
+		"BountyGoldMin"				"0"
+		"BountyGoldMax"				"0"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"550"
+		"MovementTurnRate"			"1.0"
+
+		"StatusHealth"				"800"
+		"StatusHealthRegen"			"0"
+		"StatusMana"				"0"
+		"StatusManaRegen"			"0"
+
+		"VisionDaytimeRange"		"800"
+		"VisionNighttimeRange"		"800"
+
+		"HasInventory"				"1"
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"	{	"ItemDef"	"1"		}
+				"Wearable2"	{	"ItemDef"	"215"	}
+				"Wearable3"	{	"ItemDef"	"216"	}
+				"Wearable4"	{	"ItemDef"	"217"	}
+				"Wearable5"	{	"ItemDef"	"218"	}
+				"Wearable6"	{	"ItemDef"	"335"	}
+			}
+		}
+
+		"MovementType"				"Bishop"
+		"MovementRange"				"5"
+
+		"MovementLines"
+		{
+			"1"						"antimage_anti_move_01"
+			"2"						"antimage_anti_move_02"
+			"3"						"antimage_anti_move_03"
+			"4"						"antimage_anti_move_04"
+			"5"						"antimage_anti_move_05"
+			"6"						"antimage_anti_move_06"
+			"7"						"antimage_anti_move_07"
+			"8"						"antimage_anti_move_08"
+			"9"						"antimage_anti_move_09"
+			"10"					"antimage_anti_move_10"
+			"11"					"antimage_anti_move_11"
+			"12"					"antimage_anti_move_12"
+			"13"					"antimage_anti_move_13"
+			"count"					"13"
+		}
+
+		"AttackLines"
+		{
+			"1"						"antimage_anti_attack_01"
+			"2"						"antimage_anti_attack_02"
+			"3"						"antimage_anti_attack_03"
+			"4"						"antimage_anti_attack_04"
+			"5"						"antimage_anti_attack_05"
+			"6"						"antimage_anti_attack_06"
+			"7"						"antimage_anti_attack_07"
+			"8"						"antimage_anti_attack_08"
+			"9"						"antimage_anti_attack_09"
+			"10"					"antimage_anti_attack_10"
+			"count"					"10"
+		}
+	}
+
+	"npc_tactics_skywrath_mage"
+	{										
+		"Model"						"models/heroes/skywrath_mage/skywrath_mage.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"Hero_SkywrathMage"
+		"Level"						"1"
+		"ModelScale" 				"1.35"
+
+		"Ability1"					"tactics_arcane_bolt"
+
+		"ArmorPhysical"				"0"
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"200"
+		"AttackDamageMax"			"200"
+		"AttackRate"				"1.7"
+		"AttackAnimationPoint"		"0.4"
+		"AttackAcquisitionRange"	"300"
+		"AttackRange"				"300"
+		"ProjectileModel"			""
+		"ProjectileSpeed"			"0"
+
+		"ConsideredHero"			"1"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"RingRadius"				"128"
+		"HealthBarOffset"			"250"
+
+		"BountyXP"					"0"
+		"BountyGoldMin"				"0"
+		"BountyGoldMax"				"0"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"550"
+		"MovementTurnRate"			"1.0"
+
+		"StatusHealth"				"800"
+		"StatusHealthRegen"			"0"
+		"StatusMana"				"0"
+		"StatusManaRegen"			"0"
+
+		"VisionDaytimeRange"		"800"
+		"VisionNighttimeRange"		"800"
+
+		"HasInventory"				"1"
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"	{	"ItemDef"	"420"	}
+				"Wearable2"	{	"ItemDef"	"421"	}
+				"Wearable3"	{	"ItemDef"	"422"	}
+				"Wearable4"	{	"ItemDef"	"423"	}
+				"Wearable5"	{	"ItemDef"	"424"	}
+				"Wearable6"	{	"ItemDef"	"425"	}
+			}
+		}
+
+		"MovementType"				"Bishop"
+		"MovementRange"				"4"
+
+		"MovementLines"
+		{
+			"1"						"skywrath_mage_drag_move_01"
+			"2"						"skywrath_mage_drag_move_02"
+			"3"						"skywrath_mage_drag_move_03"
+			"4"						"skywrath_mage_drag_move_04"
+			"5"						"skywrath_mage_drag_move_05"
+			"6"						"skywrath_mage_drag_move_06"
+			"7"						"skywrath_mage_drag_move_07"
+			"8"						"skywrath_mage_drag_move_08"
+			"9"						"skywrath_mage_drag_move_09"
+			"10"					"skywrath_mage_drag_move_10"
+			"11"					"skywrath_mage_drag_move_11"
+			"12"					"skywrath_mage_drag_move_12"
+			"13"					"skywrath_mage_drag_move_13"
+			"14"					"skywrath_mage_drag_move_14"
+			"15"					"skywrath_mage_drag_move_15"
+			"16"					"skywrath_mage_drag_move_16"
+			"17"					"skywrath_mage_drag_move_17"
+			"18"					"skywrath_mage_drag_move_18"
+			"19"					"skywrath_mage_drag_move_19"
+			"20"					"skywrath_mage_drag_move_20"
+			"21"					"skywrath_mage_drag_move_21"
+			"22"					"skywrath_mage_drag_move_22"
+			"count"					"22"
+		}
+
+		"AttackLines"
+		{
+			"1"						"skywrath_mage_drag_attack_01"
+			"2"						"skywrath_mage_drag_attack_02"
+			"3"						"skywrath_mage_drag_attack_03"
+			"4"						"skywrath_mage_drag_attack_04"
+			"5"						"skywrath_mage_drag_attack_05"
+			"6"						"skywrath_mage_drag_attack_06"
+			"7"						"skywrath_mage_drag_attack_07"
+			"8"						"skywrath_mage_drag_attack_08"
+			"9"						"skywrath_mage_drag_attack_09"
+			"10"					"skywrath_mage_drag_attack_10"
+			"11"					"skywrath_mage_drag_attack_11"
+			"12"					"skywrath_mage_drag_attack_12"
+			"13"					"skywrath_mage_drag_attack_13"
+			"14"					"skywrath_mage_drag_attack_14"
+			"count"					"14"
+		}
+	}
+
+	"npc_tactics_enigma"
+	{										
+		"Model"						"models/heroes/enigma/enigma.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"Hero_Enigma"
+		"Level"						"1"
+		"ModelScale" 				"1.4"
+
+		"Ability1"					"tactics_summon_eidolon"
+
+		"ArmorPhysical"				"0"
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"250"
+		"AttackDamageMax"			"250"
+		"AttackRate"				"1.7"
+		"AttackAnimationPoint"		"0.4"
+		"AttackAcquisitionRange"	"300"
+		"AttackRange"				"300"
+		"ProjectileModel"			""
+		"ProjectileSpeed"			"0"
+
+		"ConsideredHero"			"1"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"RingRadius"				"128"
+		"HealthBarOffset"			"250"
+
+		"BountyXP"					"0"
+		"BountyGoldMin"				"0"
+		"BountyGoldMax"				"0"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"550"
+		"MovementTurnRate"			"1.0"
+
+		"StatusHealth"				"900"
+		"StatusHealthRegen"			"0"
+		"StatusMana"				"0"
+		"StatusManaRegen"			"0"
+
+		"VisionDaytimeRange"		"800"
+		"VisionNighttimeRange"		"800"
+
+		"HasInventory"				"1"
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"	{	"ItemDef"	"498"	}
+				"Wearable2"	{	"ItemDef"	"628"	}
+				"Wearable3"	{	"ItemDef"	"629"	}
+			}
+		}
+
+		"MovementType"				"Bishop"
+		"MovementRange"				"6"
+
+		"MovementLines"
+		{
+			"1"						"enigma_enig_move_01"
+			"2"						"enigma_enig_move_02"
+			"3"						"enigma_enig_move_03"
+			"4"						"enigma_enig_move_04"
+			"5"						"enigma_enig_move_05"
+			"6"						"enigma_enig_move_06"
+			"7"						"enigma_enig_move_07"
+			"8"						"enigma_enig_move_09"
+			"9"						"enigma_enig_move_10"
+			"10"					"enigma_enig_move_11"
+			"11"					"enigma_enig_move_12"
+			"12"					"enigma_enig_move_13"
+			"13"					"enigma_enig_move_14"
+			"count"					"13"
+		}
+
+		"AttackLines"
+		{
+			"1"						"enigma_enig_attack_01"
+			"2"						"enigma_enig_attack_02"
+			"3"						"enigma_enig_attack_03"
+			"4"						"enigma_enig_attack_04"
+			"5"						"enigma_enig_attack_05"
+			"6"						"enigma_enig_attack_06"
+			"7"						"enigma_enig_attack_07"
+			"8"						"enigma_enig_attack_08"
+			"count"					"8"
+		}
+	}
+
+	"npc_tactics_eidolon"
+	{										
+		"Model"						"models/heroes/enigma/eidelon.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"Hero_Enigma"
+		"Level"						"1"
+		"ModelScale" 				"1.6"
+
+		"Ability1"					"tactics_summon_eidolon"
+
+		"ArmorPhysical"				"0"
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"200"
+		"AttackDamageMax"			"200"
+		"AttackRate"				"1.8"
+		"AttackAnimationPoint"		"0.4"
+		"AttackAcquisitionRange"	"300"
+		"AttackRange"				"300"
+		"ProjectileModel"			""
+		"ProjectileSpeed"			"0"
+
+		"ConsideredHero"			"1"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"RingRadius"				"128"
+		"HealthBarOffset"			"250"
+
+		"BountyXP"					"0"
+		"BountyGoldMin"				"0"
+		"BountyGoldMax"				"0"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"550"
+		"MovementTurnRate"			"1.0"
+
+		"StatusHealth"				"900"
+		"StatusHealthRegen"			"0"
+		"StatusMana"				"0"
+		"StatusManaRegen"			"0"
+
+		"VisionDaytimeRange"		"800"
+		"VisionNighttimeRange"		"800"
+
+		"HasInventory"				"1"
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"	{	"ItemDef"	"498"	}
+				"Wearable2"	{	"ItemDef"	"628"	}
+				"Wearable3"	{	"ItemDef"	"629"	}
+			}
+		}
+
+		"MovementType"				"Bishop"
+		"MovementRange"				"5"
+
+		"MovementLines"
+		{
+			"1"						"enigma_enig_move_01"
+			"2"						"enigma_enig_move_02"
+			"3"						"enigma_enig_move_03"
+			"4"						"enigma_enig_move_04"
+			"5"						"enigma_enig_move_05"
+			"6"						"enigma_enig_move_06"
+			"7"						"enigma_enig_move_07"
+			"8"						"enigma_enig_move_09"
+			"9"						"enigma_enig_move_10"
+			"10"					"enigma_enig_move_11"
+			"11"					"enigma_enig_move_12"
+			"12"					"enigma_enig_move_13"
+			"13"					"enigma_enig_move_14"
+			"count"					"13"
+		}
+
+		"AttackLines"
+		{
+			"1"						"enigma_enig_attack_01"
+			"2"						"enigma_enig_attack_02"
+			"3"						"enigma_enig_attack_03"
+			"4"						"enigma_enig_attack_04"
+			"5"						"enigma_enig_attack_05"
+			"6"						"enigma_enig_attack_06"
+			"7"						"enigma_enig_attack_07"
+			"8"						"enigma_enig_attack_08"
+			"count"					"8"
+		}
+	}
+
+	"npc_tactics_necrolyte"
+	{										
+		"Model"						"models/heroes/necrolyte/necrolyte.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"Hero_Necrolyte"
+		"Level"						"1"
+		"ModelScale" 				"1.4"
+
+		"Ability1"					"tactics_health_pulse"
+
+		"ArmorPhysical"				"0"
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"200"
+		"AttackDamageMax"			"200"
+		"AttackRate"				"1.7"
+		"AttackAnimationPoint"		"0.4"
+		"AttackAcquisitionRange"	"300"
+		"AttackRange"				"300"
+		"ProjectileModel"			""
+		"ProjectileSpeed"			"0"
+
+		"ConsideredHero"			"1"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"RingRadius"				"128"
+		"HealthBarOffset"			"250"
+
+		"BountyXP"					"0"
+		"BountyGoldMin"				"0"
+		"BountyGoldMax"				"0"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"550"
+		"MovementTurnRate"			"1.0"
+
+		"StatusHealth"				"1000"
+		"StatusHealthRegen"			"0"
+		"StatusMana"				"0"
+		"StatusManaRegen"			"0"
+
+		"VisionDaytimeRange"		"800"
+		"VisionNighttimeRange"		"800"
+
+		"HasInventory"				"1"
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"	{	"ItemDef"	"211"	}
+				"Wearable2"	{	"ItemDef"	"212"	}
+				"Wearable3"	{	"ItemDef"	"213"	}
+				"Wearable4"	{	"ItemDef"	"214"	}
+				"Wearable5"	{	"ItemDef"	"508"	}
+				"Wearable6"	{	"ItemDef"	"659"	}
+			}
+		}
+
+		"MovementType"				"Queen"
+		"MovementRange"				"6"
+
+		"MovementLines"
+		{
+			"1"						"necrolyte_necr_move_01"
+			"2"						"necrolyte_necr_move_02"
+			"3"						"necrolyte_necr_move_03"
+			"4"						"necrolyte_necr_move_04"
+			"5"						"necrolyte_necr_move_05"
+			"6"						"necrolyte_necr_move_06"
+			"7"						"necrolyte_necr_move_07"
+			"8"						"necrolyte_necr_move_08"
+			"9"						"necrolyte_necr_move_09"
+			"10"					"necrolyte_necr_move_10"
+			"11"					"necrolyte_necr_move_11"
+			"12"					"necrolyte_necr_move_12"
+			"13"					"necrolyte_necr_move_13"
+			"14"					"necrolyte_necr_move_14"
+			"15"					"necrolyte_necr_move_15"
+			"count"					"15"
+		}
+
+		"AttackLines"
+		{
+			"1"						"necrolyte_necr_attack_01"
+			"2"						"necrolyte_necr_attack_02"
+			"3"						"necrolyte_necr_attack_03"
+			"4"						"necrolyte_necr_attack_04"
+			"5"						"necrolyte_necr_attack_05"
+			"6"						"necrolyte_necr_attack_06"
+			"7"						"necrolyte_necr_attack_07"
+			"8"						"necrolyte_necr_attack_08"
+			"9"						"necrolyte_necr_attack_09"
+			"10"					"necrolyte_necr_attack_10"
+			"11"					"necrolyte_necr_attack_11"
+			"12"					"necrolyte_necr_attack_12"
+			"13"					"necrolyte_necr_attack_13"
+			"14"					"necrolyte_necr_attack_14"
+			"15"					"necrolyte_necr_attack_15"
+			"16"					"necrolyte_necr_attack_16"
+			"count"					"16"
+		}
+	}
+
+	"npc_tactics_vengeful_spirit"
+	{										
+		"Model"						"models/heroes/vengeful/vengeful.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"Hero_VengefulSpirit"
+		"Level"						"1"
+		"ModelScale" 				"1.55"
+
+		"Ability1"					"tactics_nether_swap"
+
+		"ArmorPhysical"				"0"
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"200"
+		"AttackDamageMax"			"200"
+		"AttackRate"				"1.7"
+		"AttackAnimationPoint"		"0.33"
+		"AttackAcquisitionRange"	"300"
+		"AttackRange"				"300"
+		"ProjectileModel"			""
+		"ProjectileSpeed"			"0"
+
+		"ConsideredHero"			"1"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"RingRadius"				"128"
+		"HealthBarOffset"			"250"
+
+		"BountyXP"					"0"
+		"BountyGoldMin"				"0"
+		"BountyGoldMax"				"0"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"550"
+		"MovementTurnRate"			"1.0"
+
+		"StatusHealth"				"900"
+		"StatusHealthRegen"			"0"
+		"StatusMana"				"0"
+		"StatusManaRegen"			"0"
+
+		"VisionDaytimeRange"		"800"
+		"VisionNighttimeRange"		"800"
+
+		"HasInventory"				"1"
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"	{	"ItemDef"	"517"	}
+				"Wearable2"	{	"ItemDef"	"441"	}
+				"Wearable3"	{	"ItemDef"	"442"	}
+				"Wearable4"	{	"ItemDef"	"445"	}
+				"Wearable5"	{	"ItemDef"	"447"	}
+			}
+		}
+
+		"MovementType"				"Queen"
+		"MovementRange"				"4"
+
+		"MovementLines"
+		{
+			"1"						"vengefulspirit_vng_move_01"
+			"2"						"vengefulspirit_vng_move_02"
+			"3"						"vengefulspirit_vng_move_03"
+			"4"						"vengefulspirit_vng_move_04"
+			"5"						"vengefulspirit_vng_move_05"
+			"6"						"vengefulspirit_vng_move_06"
+			"7"						"vengefulspirit_vng_move_07"
+			"8"						"vengefulspirit_vng_move_08"
+			"9"						"vengefulspirit_vng_move_09"
+			"10"					"vengefulspirit_vng_move_10"
+			"11"					"vengefulspirit_vng_move_11"
+			"12"					"vengefulspirit_vng_move_12"
+			"13"					"vengefulspirit_vng_move_13"
+			"14"					"vengefulspirit_vng_move_14"
+			"15"					"vengefulspirit_vng_move_15"
+			"16"					"vengefulspirit_vng_move_16"
+			"17"					"vengefulspirit_vng_move_17"
+			"count"					"17"
+		}
+
+		"AttackLines"
+		{
+			"1"						"vengefulspirit_vng_attack_01"
+			"2"						"vengefulspirit_vng_attack_02"
+			"3"						"vengefulspirit_vng_attack_03"
+			"4"						"vengefulspirit_vng_attack_04"
+			"5"						"vengefulspirit_vng_attack_05"
+			"6"						"vengefulspirit_vng_attack_06"
+			"7"						"vengefulspirit_vng_attack_07"
+			"8"						"vengefulspirit_vng_attack_08"
+			"9"						"vengefulspirit_vng_attack_09"
+			"10"					"vengefulspirit_vng_attack_10"
+			"11"					"vengefulspirit_vng_attack_11"
+			"12"					"vengefulspirit_vng_attack_12"
+			"13"					"vengefulspirit_vng_attack_13"
+			"14"					"vengefulspirit_vng_attack_14"
+			"15"					"vengefulspirit_vng_attack_15"
+			"count"					"15"
+		}
+	}
+
+	"npc_tactics_undying"
+	{										
+		"Model"						"models/heroes/undying/undying.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"Hero_Undying"
+		"Level"						"1"
+		"ModelScale" 				"1.5"
+
+		"Ability1"					"tactics_decay"
+
+		"ArmorPhysical"				"0"
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"200"
+		"AttackDamageMax"			"200"
+		"AttackRate"				"1.7"
+		"AttackAnimationPoint"		"0.3"
+		"AttackAcquisitionRange"	"300"
+		"AttackRange"				"300"
+		"ProjectileModel"			""
+		"ProjectileSpeed"			"0"
+
+		"ConsideredHero"			"1"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"RingRadius"				"128"
+		"HealthBarOffset"			"250"
+
+		"BountyXP"					"0"
+		"BountyGoldMin"				"0"
+		"BountyGoldMax"				"0"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"550"
+		"MovementTurnRate"			"1.0"
+
+		"StatusHealth"				"800"
+		"StatusHealthRegen"			"0"
+		"StatusMana"				"0"
+		"StatusManaRegen"			"0"
+
+		"VisionDaytimeRange"		"800"
+		"VisionNighttimeRange"		"800"
+
+		"HasInventory"				"1"
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"	{	"ItemDef"	"392"	}
+				"Wearable2"	{	"ItemDef"	"393"	}
+				"Wearable3"	{	"ItemDef"	"542"	}
+				"Wearable4"	{	"ItemDef"	"616"	}
+			}
+		}
+
+		"MovementType"				"Rook"
+		"MovementRange"				"5"
+
+		"MovementLines"
+		{
+			"1"						"undying_undying_move_01"
+			"2"						"undying_undying_move_02"
+			"3"						"undying_undying_move_03"
+			"4"						"undying_undying_move_04"
+			"5"						"undying_undying_move_05"
+			"6"						"undying_undying_move_06"
+			"7"						"undying_undying_move_07"
+			"8"						"undying_undying_move_08"
+			"9"						"undying_undying_move_09"
+			"10"					"undying_undying_move_10"
+			"11"					"undying_undying_move_11"
+			"12"					"undying_undying_move_12"
+			"13"					"undying_undying_move_13"
+			"14"					"undying_undying_move_15"
+			"15"					"undying_undying_move_16"
+			"16"					"undying_undying_move_17"
+			"17"					"undying_undying_move_18"
+			"18"					"undying_undying_move_19"
+			"19"					"undying_undying_move_20"
+			"count"					"19"
+		}
+
+		"AttackLines"
+		{
+			"1"						"undying_undying_attack_01"
+			"2"						"undying_undying_attack_02"
+			"3"						"undying_undying_attack_03"
+			"4"						"undying_undying_attack_04"
+			"5"						"undying_undying_attack_05"
+			"6"						"undying_undying_attack_06"
+			"7"						"undying_undying_attack_07"
+			"8"						"undying_undying_attack_08"
+			"9"						"undying_undying_attack_09"
+			"10"					"undying_undying_attack_10"
+			"11"					"undying_undying_attack_11"
+			"12"					"undying_undying_attack_12"
+			"13"					"undying_undying_attack_13"
+			"14"					"undying_undying_attack_14"
+			"15"					"undying_undying_attack_15"
+			"16"					"undying_undying_attack_16"
+			"17"					"undying_undying_attack_17"
+			"18"					"undying_undying_attack_18"
+			"19"					"undying_undying_attack_19"
+			"count"					"19"
+		}
+	}
+
+	"npc_tactics_pudge"
+	{										
+		"Model"						"models/heroes/pudge/pudge.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"Hero_Pudge"
+		"Level"						"1"
+		"ModelScale" 				"1.35"
+
+		"Ability1"					"tactics_meat_hook"
+
+		"ArmorPhysical"				"0"
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"200"
+		"AttackDamageMax"			"200"
+		"AttackRate"				"1.7"
+		"AttackAnimationPoint"		"0.5"
+		"AttackAcquisitionRange"	"300"
+		"AttackRange"				"300"
+		"ProjectileModel"			""
+		"ProjectileSpeed"			"0"
+
+		"ConsideredHero"			"1"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"RingRadius"				"128"
+		"HealthBarOffset"			"250"
+
+		"BountyXP"					"0"
+		"BountyGoldMin"				"0"
+		"BountyGoldMax"				"0"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"550"
+		"MovementTurnRate"			"1.0"
+
+		"StatusHealth"				"1000"
+		"StatusHealthRegen"			"0"
+		"StatusMana"				"0"
+		"StatusManaRegen"			"0"
+
+		"VisionDaytimeRange"		"800"
+		"VisionNighttimeRange"		"800"
+
+		"HasInventory"				"1"
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"	{	"ItemDef"	"47"	}
+				"Wearable2"	{	"ItemDef"	"258"	}
+				"Wearable3"	{	"ItemDef"	"259"	}
+				"Wearable4"	{	"ItemDef"	"260"	}
+				"Wearable5"	{	"ItemDef"	"261"	}
+				"Wearable6"	{	"ItemDef"	"262"	}
+				"Wearable7"	{	"ItemDef"	"391"	}
+				"Wearable8"	{	"ItemDef"	"470"	}
+			}
+		}
+
+		"MovementType"				"Queen"
+		"MovementRange"				"6"
+
+		"MovementLines"
+		{
+			"1"						"pudge_pud_move_01"
+			"2"						"pudge_pud_move_03"
+			"3"						"pudge_pud_move_04"
+			"4"						"pudge_pud_move_05"
+			"5"						"pudge_pud_move_06"
+			"6"						"pudge_pud_move_07"
+			"7"						"pudge_pud_move_09"
+			"8"						"pudge_pud_move_10"
+			"9"						"pudge_pud_move_11"
+			"10"					"pudge_pud_move_12"
+			"11"					"pudge_pud_move_13"
+			"12"					"pudge_pud_move_14"
+			"13"					"pudge_pud_move_15"
+			"14"					"pudge_pud_move_16"
+			"15"					"pudge_pud_move_17"
+			"count"					"15"
+		}
+
+		"AttackLines"
+		{
+			"1"						"pudge_pud_attack_01"
+			"2"						"pudge_pud_attack_02"
+			"3"						"pudge_pud_attack_03"
+			"4"						"pudge_pud_attack_04"
+			"5"						"pudge_pud_attack_05"
+			"6"						"pudge_pud_attack_06"
+			"7"						"pudge_pud_attack_08"
+			"8"						"pudge_pud_attack_09"
+			"9"						"pudge_pud_attack_10"
+			"10"					"pudge_pud_attack_11"
+			"11"					"pudge_pud_attack_12"
+			"12"					"pudge_pud_attack_13"
+			"13"					"pudge_pud_attack_14"
+			"14"					"pudge_pud_attack_15"
+			"15"					"pudge_pud_attack_16"
+			"count"					"15"
+		}
+	}
+
+	"npc_tactics_dazzle"
+	{										
+		"Model"						"models/heroes/dazzle/dazzle.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"Hero_Dazzle"
+		"Level"						"1"
+		"ModelScale" 				"1.35"
+
+		"Ability1"					"tactics_shallow_grave"
+
+		"ArmorPhysical"				"0"
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"200"
+		"AttackDamageMax"			"200"
+		"AttackRate"				"1.7"
+		"AttackAnimationPoint"		"0.3"
+		"AttackAcquisitionRange"	"300"
+		"AttackRange"				"300"
+		"ProjectileModel"			""
+		"ProjectileSpeed"			"0"
+
+		"ConsideredHero"			"1"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"RingRadius"				"128"
+		"HealthBarOffset"			"250"
+
+		"BountyXP"					"0"
+		"BountyGoldMin"				"0"
+		"BountyGoldMax"				"0"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"550"
+		"MovementTurnRate"			"1.0"
+
+		"StatusHealth"				"900"
+		"StatusHealthRegen"			"0"
+		"StatusMana"				"0"
+		"StatusManaRegen"			"0"
+
+		"VisionDaytimeRange"		"800"
+		"VisionNighttimeRange"		"800"
+
+		"HasInventory"				"1"
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"	{	"ItemDef"	"263"	}
+				"Wearable2"	{	"ItemDef"	"264"	}
+				"Wearable3"	{	"ItemDef"	"265"	}
+				"Wearable4"	{	"ItemDef"	"266"	}
+				"Wearable5"	{	"ItemDef"	"468"	}
+			}
+		}
+
+		"MovementType"				"Queen"
+		"MovementRange"				"5"
+
+		"MovementLines"
+		{
+			"1"						"dazzle_dazz_move_01"
+			"2"						"dazzle_dazz_move_02"
+			"3"						"dazzle_dazz_move_03"
+			"4"						"dazzle_dazz_move_04"
+			"5"						"dazzle_dazz_move_05"
+			"6"						"dazzle_dazz_move_06"
+			"7"						"dazzle_dazz_move_07"
+			"8"						"dazzle_dazz_move_08"
+			"9"						"dazzle_dazz_move_09"
+			"10"					"dazzle_dazz_move_10"
+			"11"					"dazzle_dazz_move_11"
+			"12"					"dazzle_dazz_move_12"
+			"13"					"dazzle_dazz_move_13"
+			"14"					"dazzle_dazz_move_14"
+			"15"					"dazzle_dazz_move_15"
+			"16"					"dazzle_dazz_move_16"
+			"17"					"dazzle_dazz_move_17"
+			"count"					"17"
+		}
+
+		"AttackLines"
+		{
+			"1"						"dazzle_dazz_attack_01"
+			"2"						"dazzle_dazz_attack_02"
+			"3"						"dazzle_dazz_attack_03"
+			"4"						"dazzle_dazz_attack_04"
+			"5"						"dazzle_dazz_attack_05"
+			"6"						"dazzle_dazz_attack_06"
+			"7"						"dazzle_dazz_attack_07"
+			"8"						"dazzle_dazz_attack_08"
+			"9"						"dazzle_dazz_attack_09"
+			"10"					"dazzle_dazz_attack_10"
+			"11"					"dazzle_dazz_attack_11"
+			"12"					"dazzle_dazz_attack_12"
+			"13"					"dazzle_dazz_attack_13"
+			"count"					"13"
+		}
+	}
+
+	"npc_tactics_techies"
+	{										
+		"Model"						"models/heroes/techies/techies.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"Hero_Techies"
+		"Level"						"1"
+		"ModelScale" 				"0.87"
+
+		"Ability1"					"tactics_proximity_mine"
+
+		"ArmorPhysical"				"0"
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"200"
+		"AttackDamageMax"			"200"
+		"AttackRate"				"1.7"
+		"AttackAnimationPoint"		"0.5"
+		"AttackAcquisitionRange"	"300"
+		"AttackRange"				"300"
+		"ProjectileModel"			""
+		"ProjectileSpeed"			"0"
+
+		"ConsideredHero"			"1"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"RingRadius"				"128"
+		"HealthBarOffset"			"250"
+
+		"BountyXP"					"0"
+		"BountyGoldMin"				"0"
+		"BountyGoldMax"				"0"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"550"
+		"MovementTurnRate"			"1.0"
+
+		"StatusHealth"				"800"
+		"StatusHealthRegen"			"0"
+		"StatusMana"				"0"
+		"StatusManaRegen"			"0"
+
+		"VisionDaytimeRange"		"800"
+		"VisionNighttimeRange"		"800"
+
+		"HasInventory"				"1"
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"	{	"ItemDef"	"394"	}
+				"Wearable2"	{	"ItemDef"	"487"	}
+				"Wearable3"	{	"ItemDef"	"489"	}
+				"Wearable4"	{	"ItemDef"	"490"	}
+				"Wearable5"	{	"ItemDef"	"491"	}
+				"Wearable6"	{	"ItemDef"	"492"	}
+			}
+		}
+
+		"MovementType"				"Queen"
+		"MovementRange"				"5"
+
+		"MovementLines"
+		{
+			"1"						"techies_tech_move_01"
+			"2"						"techies_tech_move_02"
+			"3"						"techies_tech_move_03"
+			"4"						"techies_tech_move_04"
+			"5"						"techies_tech_move_06"
+			"6"						"techies_tech_move_07"
+			"7"						"techies_tech_move_08"
+			"8"						"techies_tech_move_09"
+			"9"						"techies_tech_move_10"
+			"10"					"techies_tech_move_11"
+			"11"					"techies_tech_move_12"
+			"12"					"techies_tech_move_14"
+			"13"					"techies_tech_move_16"
+			"14"					"techies_tech_move_17"
+			"15"					"techies_tech_move_18"
+			"16"					"techies_tech_move_19"
+			"17"					"techies_tech_move_20"
+			"18"					"techies_tech_move_21"
+			"19"					"techies_tech_move_22"
+			"20"					"techies_tech_move_23"
+			"21"					"techies_tech_move_24"
+			"22"					"techies_tech_move_26"
+			"23"					"techies_tech_move_27"
+			"24"					"techies_tech_move_28"
+			"25"					"techies_tech_move_30"
+			"26"					"techies_tech_move_32"
+			"27"					"techies_tech_move_33"
+			"28"					"techies_tech_move_34"
+			"29"					"techies_tech_move_36"
+			"30"					"techies_tech_move_37"
+			"31"					"techies_tech_move_38"
+			"32"					"techies_tech_move_39"
+			"33"					"techies_tech_move_40"
+			"34"					"techies_tech_move_42"
+			"35"					"techies_tech_move_43"
+			"36"					"techies_tech_move_44"
+			"37"					"techies_tech_move_45"
+			"38"					"techies_tech_move_46"
+			"39"					"techies_tech_move_47"
+			"40"					"techies_tech_move_48"
+			"41"					"techies_tech_move_49"
+			"42"					"techies_tech_move_50"
+			"43"					"techies_tech_move_51"
+			"44"					"techies_tech_move_52"
+			"45"					"techies_tech_move_53"
+			"46"					"techies_tech_move_54"
+			"47"					"techies_tech_move_56"
+			"48"					"techies_tech_move_60"
+			"count"					"48"
+		}
+
+		"AttackLines"
+		{
+			"1"						"techies_tech_attack_01"
+			"2"						"techies_tech_attack_02"
+			"3"						"techies_tech_attack_03"
+			"4"						"techies_tech_attack_05"
+			"5"						"techies_tech_attack_06"
+			"6"						"techies_tech_attack_07"
+			"7"						"techies_tech_attack_09"
+			"8"						"techies_tech_attack_12"
+			"9"						"techies_tech_attack_13"
+			"10"					"techies_tech_attack_14"
+			"11"					"techies_tech_attack_15"
+			"12"					"techies_tech_attack_16"
+			"13"					"techies_tech_attack_19"
+			"14"					"techies_tech_attack_20"
+			"15"					"techies_tech_attack_21"
+			"16"					"techies_tech_attack_22"
+			"17"					"techies_tech_attack_23"
+			"18"					"techies_tech_attack_24"
+			"19"					"techies_tech_attack_25"
+			"count"					"19"
+		}
+	}
+
+	"npc_tactics_mine"
+	{										
+		"Model"						"models/heroes/techies/fx_techiesfx_mine.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					""
+		"Level"						"1"
+		"ModelScale" 				"1.25"
+
+		"Ability1"					""
+
+		"ArmorPhysical"				"0"
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"0"
+		"AttackDamageMax"			"0"
+		"AttackRate"				"1.7"
+		"AttackAnimationPoint"		"0.3"
+		"AttackAcquisitionRange"	"300"
+		"AttackRange"				"300"
+		"ProjectileModel"			""
+		"ProjectileSpeed"			"0"
+
+		"ConsideredHero"			"0"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"RingRadius"				"128"
+		"HealthBarOffset"			"205"
+
+		"BountyXP"					"0"
+		"BountyGoldMin"				"0"
+		"BountyGoldMax"				"0"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"
+		"MovementSpeed"				"0"
+		"MovementTurnRate"			"1.0"
+
+		"StatusHealth"				"50"
+		"StatusHealthRegen"			"0"
+		"StatusMana"				"0"
+		"StatusManaRegen"			"0"
+
+		"VisionDaytimeRange"		"800"
+		"VisionNighttimeRange"		"800"
+
+		"HasInventory"				"1"
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		"MovementType"				"Pawn"
+		"MovementRange"				"0"
+
+		"MovementLines"
+		{
+			"1"						""
+			"count"					"1"
+		}
+
+		"AttackLines"
+		{
+			"1"						""
+			"count"					"1"
+		}
+	}
+
+	//=================================================================================
+	//	Obstacles
+	//=================================================================================
+	"npc_tactics_obstacle_1x1_a"
+	{										
+		"Model"						"models/props_rock/riveredge_rock008a.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"Level"						"10"
+		"ModelScale" 				"1.0"
+
+		"Ability1"					""
+
+		"ArmorPhysical"				"0"
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"0"
+		"AttackDamageMax"			"0"
+		"AttackRate"				"1.0"
+		"AttackAnimationPoint"		"0.0"
+		"AttackAcquisitionRange"	"0"
+		"AttackRange"				"0"
+		"ProjectileModel"			""
+		"ProjectileSpeed"			"0"
+
+		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"
+		"RingRadius"				"120"
+		"HealthBarOffset"			"400"
+
+		"BountyXP"					"0"
+		"BountyGoldMin"				"0"
+		"BountyGoldMax"				"0"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"
+		"MovementSpeed"				"0"
+
+		"StatusHealth"				"1000"
+		"StatusHealthRegen"			"0"
+		"StatusMana"				"0"
+		"StatusManaRegen"			"0"
+
+		"VisionDaytimeRange"		"0"
+		"VisionNighttimeRange"		"0"
+
+		"HasInventory"				"0"
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	}
+}

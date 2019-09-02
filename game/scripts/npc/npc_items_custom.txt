@@ -1,0 +1,167 @@
+"DOTAAbilities"
+{
+	//=================================================================================================================
+	//	Tactics items
+	//=================================================================================================================
+	"item_tactics_blade_of_attack"
+	{
+		"ID"							"7000"
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"tactics/abilities/items.lua"
+		"AbilityTextureName" 			"item_blades_of_attack"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_ITEM"
+
+		"ItemCost"						"1"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ShouldBeSuggested"				"0"
+		"ItemPurchasable"				"0"
+		"ItemSellable"					"0"
+		"ItemKillable"					"0"
+		"ItemDroppable"					"0"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"50"
+			}
+		}
+	}
+
+	"item_tactics_wind_lace"
+	{
+		"ID"							"7001"
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"tactics/abilities/items.lua"
+		"AbilityTextureName" 			"item_wind_lace"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_ITEM"
+
+		"ItemCost"						"1"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ShouldBeSuggested"				"0"
+		"ItemPurchasable"				"0"
+		"ItemSellable"					"0"
+		"ItemKillable"					"0"
+		"ItemDroppable"					"0"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_move"			"1"	// hardcoded in the GetMovementRange() function
+			}
+		}
+	}
+
+	"item_tactics_ring_of_health"
+	{
+		"ID"							"7002"
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"tactics/abilities/items.lua"
+		"AbilityTextureName" 			"item_ring_of_health"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_ITEM"
+
+		"ItemCost"						"2"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ShouldBeSuggested"				"0"
+		"ItemPurchasable"				"0"
+		"ItemSellable"					"0"
+		"ItemKillable"					"0"
+		"ItemDroppable"					"0"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"health_regen"			"50"	// hardcoded in the combat manager
+			}
+		}
+	}
+
+	"item_tactics_phase_boots"
+	{
+		"ID"							"7003"
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"tactics/abilities/items.lua"
+		"AbilityTextureName" 			"item_phase_boots"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_ITEM"
+
+		"ItemCost"						"2"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ShouldBeSuggested"				"0"
+		"ItemPurchasable"				"0"
+		"ItemSellable"					"0"
+		"ItemKillable"					"0"
+		"ItemDroppable"					"0"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_move"			"4"	// hardcoded in the GetMovementRange() function
+			}
+		}
+	}
+
+	"item_tactics_daedalus"
+	{
+		"ID"							"7004"
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"tactics/abilities/items.lua"
+		"AbilityTextureName" 			"item_greater_crit"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_ITEM"
+
+		"ItemCost"						"3"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ShouldBeSuggested"				"0"
+		"ItemPurchasable"				"0"
+		"ItemSellable"					"0"
+		"ItemKillable"					"0"
+		"ItemDroppable"					"0"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"150"
+			}
+		}
+	}
+
+	"item_tactics_travel_boots"
+	{
+		"ID"							"7005"
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"tactics/abilities/items.lua"
+		"AbilityTextureName" 			"item_travel_boots"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_ITEM"
+
+		"ItemCost"						"3"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ShouldBeSuggested"				"0"
+		"ItemPurchasable"				"0"
+		"ItemSellable"					"0"
+		"ItemKillable"					"0"
+		"ItemDroppable"					"0"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"move_value"			"12"	// hardcoded in the GetMovementRange() function
+			}
+		}
+	}
+}

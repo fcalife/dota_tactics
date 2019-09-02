@@ -1,0 +1,132 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_BoundingBoxMin = [ -30.0, -30.0, -30.0 ]
+	m_BoundingBoxMax = [ 30.0, 30.0, 530.0 ]
+	m_ConstantColor = [ 255, 220, 81, 255 ]
+	m_flConstantRadius = 1.5
+	m_flMaxDrawDistance = 5000.0
+	m_flNoDrawTimeToGoToSleep = 2.0
+	m_nMaxParticles = 12
+	m_bShouldSort = false
+	m_bShouldHitboxesFallbackToRenderBounds = false
+	m_Operators = 
+	[
+		{
+			_class = "C_OP_RampScalarLinearSimple"
+			m_Rate = -2.0
+			m_flEndTime = 1000000000.0
+			m_nField = 16
+			m_nOpEndCapState = 1
+		},
+		{
+			_class = "C_OP_PositionLock"
+			m_bLockRot = true
+		},
+		{
+			_class = "C_OP_Decay"
+		},
+		{
+			_class = "C_OP_InterpolateRadius"
+			m_flEndScale = 3.0
+		},
+		{
+			_class = "C_OP_FadeOutSimple"
+		},
+		{
+			_class = "C_OP_SpinUpdate"
+		},
+		{
+			_class = "C_OP_FadeInSimple"
+			m_flFadeInTime = 0.5
+		},
+		{
+			_class = "C_OP_ColorInterpolate"
+			m_ColorFade = [ 234, 145, 6, 255 ]
+			m_flFadeStartTime = 1.0
+			m_flFadeEndTime = 0.0
+		},
+		{
+			_class = "C_OP_OscillateScalar"
+			m_RateMin = 0.15
+			m_RateMax = 0.5
+			m_FrequencyMin = 15.0
+			m_FrequencyMax = 30.0
+			m_nField = 10
+		},
+		{
+			_class = "C_OP_StopAfterCPDuration"
+			m_flDuration = 0.0
+			m_bDisableOperator = true
+		},
+	]
+	m_Renderers = 
+	[
+		{
+			_class = "C_OP_RenderTrails"
+			m_flMaxSize = 5000.0
+			m_flStartFadeSize = 100000000.0
+			m_flEndFadeSize = 200000000.0
+			m_flMaxLength = 500.0
+			m_vEndTrailTintFactor = [ 1.0, 1.0, 1.0, 0.0 ]
+			m_flRadiusScale = 0.5
+			m_flFinalTextureScaleV = -1.0
+			m_flFinalTextureOffsetV = 1.0
+			m_nSequenceCombineMode = "2"
+			m_bAdditive = true
+			m_nRefractBlurType = "2"
+			m_flOverbrightFactor = 2.0
+			m_hTexture = resource:"materials/particle/particle_cone_gradient_2.vtex"
+			VisibilityInputs = 
+			{
+				m_flInputMax = 0.0
+			}
+		},
+	]
+	m_Initializers = 
+	[
+		{
+			_class = "C_INIT_RandomLifeTime"
+			m_fLifetimeMin = 2.5
+			m_fLifetimeMax = 2.5
+		},
+		{
+			_class = "C_INIT_RandomRadius"
+			m_flRadiusMin = 50.0
+			m_flRadiusMax = 100.0
+		},
+		{
+			_class = "C_INIT_RandomAlpha"
+		},
+		{
+			_class = "C_INIT_CreateWithinSphere"
+			m_fSpeedMin = 1000.0
+			m_fSpeedMax = 2000.0
+		},
+		{
+			_class = "C_INIT_PositionOffset"
+			m_OffsetMin = [ 0.0, 0.0, 10.0 ]
+			m_OffsetMax = [ 0.0, 0.0, 10.0 ]
+			m_bLocalCoords = true
+		},
+		{
+			_class = "C_INIT_RandomRotation"
+		},
+		{
+			_class = "C_INIT_RandomRotationSpeed"
+			m_flDegreesMin = 180.0
+		},
+		{
+			_class = "C_INIT_RandomTrailLength"
+			m_flMinLength = 0.2
+			m_flMaxLength = 0.3
+		},
+	]
+	m_Emitters = 
+	[
+		{
+			_class = "C_OP_ContinuousEmitter"
+			m_flEmitRate = 40.0
+		},
+	]
+}

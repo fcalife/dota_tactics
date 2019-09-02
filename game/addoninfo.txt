@@ -1,0 +1,23 @@
+"AddonInfo"
+{
+	"TeamCount"					"2"
+	"maps"						"blind_draft"
+	"IsPlayable"				"1"
+	"HeroGuidesSupported"		"0"
+	"ShouldForceDefaultGuide"	"0"
+	
+	"blind_draft"
+	{
+		"MaxPlayers"	"2"
+	}
+
+	//"Default_Keys"
+	//{
+	//	"01"
+	//	{
+	//		"Key"       "1"
+	//		"Command"   "+BackHome"
+	//		"Name"      "BackHome"
+	//	}
+	//}
+}

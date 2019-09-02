@@ -1,0 +1,66 @@
+#basic_menu
+{
+	width: 220px;
+	height: 300px;
+	margin-top: 170px;
+	margin-left: 20px;
+	flow-children: down;
+	background-color: #000000d0;
+}
+
+.menu_row
+{
+	width: 90%;
+	height: 40px;
+	horizontal-align: center;
+	flow-children: right;
+}
+
+#end_turn_button
+{
+	width: 90%;
+	height: 40px;
+	horizontal-align: center;
+	background-color: green;
+	border-radius: 8px;
+}
+
+#end_turn_button:hover
+{
+	pre-transform-scale2d: 1.05;
+	brightness: 1.2;
+}
+
+#timer
+{
+	color: #0000ffff;
+	horizontal-align: center;
+	font-size: 72;
+	font-weight: bold;
+}
+
+.left_label
+{
+	color: #ffffffff;
+	horizontal-align: left;
+	vertical-align: center;
+	font-size: 18;	
+}
+
+.right_label
+{
+	color: #ff0000ff;
+	horizontal-align: right;
+	vertical-align: center;
+	font-size: 22;
+	font-weight: bold;
+}
+
+#end_turn_label
+{
+	color: #ffffffff;
+	horizontal-align: center;
+	vertical-align: center;
+	font-size: 20;
+	font-weight: bold;
+}
