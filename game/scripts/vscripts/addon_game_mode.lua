@@ -40,6 +40,8 @@ function Precache(context)
 	PrecacheResource("particle", "particles/tactics_rune_dd_pickup.vpcf", context)
 	PrecacheResource("particle", "particles/tactics_rune_regen_ground_tile.vpcf", context)
 	PrecacheResource("particle", "particles/tactics_rune_dd_ground_tile.vpcf", context)
+	PrecacheResource("particle", "particles/echo_sabre.vpcf", context)
+	PrecacheResource("particle", "particles/echo_shell.vpcf", context)
 	PrecacheResource("soundfile", "soundevents/tactics_soundevents.vsndevts", context)
 
 	PrecacheResource("soundfile", "soundevents/game_sounds_heroes/game_sounds_warlock.vsndevts", context)

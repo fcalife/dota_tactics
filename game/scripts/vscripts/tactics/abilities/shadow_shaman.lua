@@ -36,7 +36,7 @@ function tactics_serpent_ward:OnSpellStart()
 			-- Spend resources
 			caster:SetHasCastedThisTurn()
 			caster:ProcessCastModifiers()
-			TurnManager:SpendActionPoint(player_id)
+			caster:SpendActionPoint()
 			TurnManager:SpendMana(player_id, mana_cost)
 
 			-- Perform the spell

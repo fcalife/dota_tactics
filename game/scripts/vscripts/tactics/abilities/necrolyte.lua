@@ -23,7 +23,7 @@ function tactics_health_pulse:OnSpellStart()
 			-- Spend resources
 			caster:SetHasCastedThisTurn()
 			caster:ProcessCastModifiers()
-			TurnManager:SpendActionPoint(player_id)
+			caster:SpendActionPoint()
 			TurnManager:SpendMana(player_id, mana_cost)
 			Tactics:SetPlayerBusy(player_id)
 

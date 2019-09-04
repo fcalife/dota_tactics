@@ -34,7 +34,7 @@ function tactics_pawn_attack:OnSpellStart()
 			-- Spend resources
 			caster:SetHasCastedThisTurn()
 			caster:ProcessCastModifiers()
-			TurnManager:SpendActionPoint(player_id)
+			caster:SpendActionPoint()
 
 			-- Perform the attack
 			caster:FaceTowards(target:GetAbsOrigin())

@@ -61,18 +61,22 @@ end
 
 function CDOTA_BaseNPC:GetManaCostReduction()
 	local mana_reduction = 0
-	if self:HasModifier("modifier_tactics_arcane_rune") then
-		mana_reduction = mana_reduction + 1
+	local all_modifiers = self:FindAllModifiers()
+	for _, modifier in pairs(all_modifiers) do
+		local modifier_name = modifier:GetName()
+		if modifier_name == "modifier_tactics_arcane_rune" or modifier_name == "modifier_tactics_mystic_staff" then
+			mana_reduction = mana_reduction + 1
+		end
 	end
 	return mana_reduction
 end
 
 function CDOTA_BaseNPC:ProcessCastModifiers()
-	local grid_location = self:GetBoardPosition()
-	local rune_name = Tactics:GetRuneName(grid_location.x, grid_location.y)
-	if not rune_name or rune_name ~= "arcane" then
-		self:RemoveModifierByName("modifier_tactics_arcane_rune")
-	end
+	--local grid_location = self:GetBoardPosition()
+	--local rune_name = Tactics:GetRuneName(grid_location.x, grid_location.y)
+	--if not rune_name or rune_name ~= "arcane" then
+	--	self:RemoveModifierByName("modifier_tactics_arcane_rune")
+	--end
 end
 
 function CDOTA_BaseNPC:PlayMovementLine()
@@ -118,5 +122,23 @@ function CDOTA_BaseNPC:HasCastedThisTurn()
 		return true
 	else
 		return false
+	end
+end
+
+
+
+function CDOTA_BaseNPC:SpendActionPoint()
+	if self:HasModifier("modifier_tactics_echo_sabre") then
+		self:RemoveModifierByName("modifier_tactics_echo_sabre")
+		return true
+	else
+		local player_id = self:GetTacticsPlayerID()
+		if TurnManager.current_action_points[player_id] > 0 then
+			TurnManager.current_action_points[player_id] = TurnManager.current_action_points[player_id] - 1
+			TurnManager:UpdateNetTableValues()
+			return true
+		else
+			return false
+		end
 	end
 end

@@ -165,7 +165,10 @@ function Tactics:DrawAbilityAreaPreview(ability, player_id)
 	local ability_name = ability:GetAbilityName()
 	local path_grid = {}
 
-	if aoe_type == "pawn" then
+	if ability_name == "item_tactics_tpscroll" then
+		local king_position = self:GetKing(caster_team):GetBoardPosition()
+		path_grid = self:CalculateSquareEmptyArea(king_position.x, king_position.y, range)
+	elseif aoe_type == "pawn" then
 		if player_id == self:GetRadiantPlayerID() then
 			table.insert(path_grid, Vector(position.x - 1, position.y + 1, 0))
 			table.insert(path_grid, Vector(position.x + 1, position.y + 1, 0))

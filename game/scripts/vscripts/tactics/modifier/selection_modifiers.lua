@@ -170,7 +170,7 @@ function modifier_tactics_mouse_selected:OnIntervalThink()
 				end
 
 				-- Spend action point
-				TurnManager:SpendActionPoint(self.player_id)
+				self.unit:SpendActionPoint()
 
 				-- Clean up
 				self:Destroy()

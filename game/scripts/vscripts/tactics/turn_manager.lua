@@ -46,6 +46,13 @@ function TurnManager:EndTurn()
 	for _, unit in pairs(Tactics:GetAllUnits()) do
 		unit:ClearHasMovedThisTurn()
 		unit:ClearHasCastedThisTurn()
+
+		for i = 0, 8 do
+			local item = unit:GetItemInSlot(i)
+			if item then
+				item:SetActivated(true)
+			end
+		end
 	end
 
 	if self:GetCurrentTurnTeam() == DOTA_TEAM_GOODGUYS then

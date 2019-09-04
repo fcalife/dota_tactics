@@ -63,14 +63,14 @@ function CombatManager:PerformTurnEffects()
 			if unit_modifier:GetName() == "modifier_tactics_shallow_grave_effect" and unit_team == current_turn_team then
 				unit:RemoveModifierByName("modifier_tactics_shallow_grave_effect")
 			end
+		end
+	end
 
-			-- Respawn runes
-			for x = 1, 12 do
-				for y = 1, 12 do
-					if Tactics:IsRune(x, y) then
-						Tactics:SpawnRune(x, y)
-					end
-				end
+	-- Respawn runes
+	for x = 1, 12 do
+		for y = 1, 12 do
+			if Tactics:IsRune(x, y) then
+				Tactics:SpawnRune(x, y)
 			end
 		end
 	end

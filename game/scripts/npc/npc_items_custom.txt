@@ -164,4 +164,121 @@
 			}
 		}
 	}
+
+	"item_tactics_tpscroll"
+	{
+		"ID"							"7006"
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"tactics/abilities/items.lua"
+		"AbilityTextureName" 			"item_tpscroll"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+
+		"ItemCost"						"30"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ShouldBeSuggested"				"0"
+		"ItemPurchasable"				"1"
+		"ItemSellable"					"0"
+		"ItemKillable"					"0"
+		"ItemDroppable"					"0"
+		"ItemInitialCharges"			"1"
+		"ItemRequiresCharges"			"1"
+	}
+
+	"item_tactics_force_staff"
+	{
+		"ID"							"7007"
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"tactics/abilities/items.lua"
+		"AbilityTextureName" 			"item_force_staff"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_BOTH"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+
+		"ItemCost"						"50"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ShouldBeSuggested"				"0"
+		"ItemPurchasable"				"1"
+		"ItemSellable"					"0"
+		"ItemKillable"					"0"
+		"ItemDroppable"					"0"
+		"ItemRequiresCharges"			"0"
+	}
+
+	"item_tactics_refresher_orb"
+	{
+		"ID"							"7008"
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"tactics/abilities/items.lua"
+		"AbilityTextureName" 			"item_refresher"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+
+		"ItemCost"						"80"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ShouldBeSuggested"				"0"
+		"ItemPurchasable"				"1"
+		"ItemSellable"					"0"
+		"ItemKillable"					"0"
+		"ItemDroppable"					"0"
+		"ItemRequiresCharges"			"0"
+	}
+
+	"item_tactics_blink_dagger"
+	{
+		"ID"							"7009"
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"tactics/abilities/items.lua"
+		"AbilityTextureName" 			"item_blink"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+
+		"ItemCost"						"90"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ShouldBeSuggested"				"0"
+		"ItemPurchasable"				"1"
+		"ItemSellable"					"0"
+		"ItemKillable"					"0"
+		"ItemDroppable"					"0"
+		"ItemRequiresCharges"			"0"
+	}
+
+	"item_tactics_mystic_staff"
+	{
+		"ID"							"7010"
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"tactics/abilities/items.lua"
+		"AbilityTextureName" 			"item_mystic_staff"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"ItemCost"						"100"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ShouldBeSuggested"				"0"
+		"ItemPurchasable"				"1"
+		"ItemSellable"					"0"
+		"ItemKillable"					"0"
+		"ItemDroppable"					"0"
+		"ItemRequiresCharges"			"0"
+	}
+
+	"item_tactics_echo_sabre"
+	{
+		"ID"							"7011"
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"tactics/abilities/items.lua"
+		"AbilityTextureName" 			"item_echo_sabre"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+
+		"ItemCost"						"120"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ShouldBeSuggested"				"0"
+		"ItemPurchasable"				"1"
+		"ItemSellable"					"0"
+		"ItemKillable"					"0"
+		"ItemDroppable"					"0"
+		"ItemRequiresCharges"			"0"
+	}
 }

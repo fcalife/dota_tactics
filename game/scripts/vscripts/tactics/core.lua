@@ -186,6 +186,21 @@ function Tactics:GetAllUnits()
 	return units
 end
 
+function Tactics:GetKing(team)
+	for i = 1, 12 do
+		for j = 1, 12 do
+			if self:IsUnit(i, j) then
+				local unit = self:GetGridContent(i, j)
+				if unit and unit:GetTeam() == team and unit:HasModifier("modifier_tactics_unit") then
+					if unit:FindModifierByName("modifier_tactics_unit").is_king then
+						return unit
+					end 
+				end
+			end
+		end
+	end
+end
+
 function Tactics:IsEmpty(x, y)
 	if self:GetGridContent(x, y) == "empty" then
 		return true
@@ -550,8 +565,18 @@ function Tactics:SpawnInitialUnits(initial_positions)
 
 	-- Spawn kings
 	print("Placing kings...")
-	local radiant_king = self:SpawnUnit(initial_positions[1].x, initial_positions[1].y, "npc_tactics_king_radiant", DOTA_TEAM_GOODGUYS):AddItemByName("item_tactics_ring_of_health")
-	local dire_king = self:SpawnUnit(self:Flip(initial_positions[1].x), self:Flip(initial_positions[1].y), "npc_tactics_king_dire", DOTA_TEAM_BADGUYS):AddItemByName("item_tactics_ring_of_health")
+	local unit = self:SpawnUnit(initial_positions[1].x, initial_positions[1].y, "npc_tactics_king_radiant", DOTA_TEAM_GOODGUYS)
+	unit:AddItemByName("item_tactics_tpscroll"):SetCurrentCharges(10)
+	unit:AddItemByName("item_tactics_force_staff")
+	unit:AddItemByName("item_tactics_refresher_orb")
+	unit:AddItemByName("item_tactics_blink_dagger")
+	unit:AddItemByName("item_tactics_echo_sabre")
+	unit = self:SpawnUnit(self:Flip(initial_positions[1].x), self:Flip(initial_positions[1].y), "npc_tactics_king_dire", DOTA_TEAM_BADGUYS)
+	unit:AddItemByName("item_tactics_tpscroll"):SetCurrentCharges(10)
+	unit:AddItemByName("item_tactics_force_staff")
+	unit:AddItemByName("item_tactics_refresher_orb")
+	unit:AddItemByName("item_tactics_blink_dagger")
+	unit:AddItemByName("item_tactics_echo_sabre")
 
 	-- Spawn other units
 	print("Placing main units...")
@@ -560,17 +585,61 @@ function Tactics:SpawnInitialUnits(initial_positions)
 	--	self:SpawnUnit(self:Flip(initial_positions[i].x), self:Flip(initial_positions[i].y), "npc_tactics_centaur", DOTA_TEAM_BADGUYS)
 	--end
 
-	self:SpawnUnit(initial_positions[2].x, initial_positions[2].y, "npc_tactics_vengeful_spirit", DOTA_TEAM_GOODGUYS):AddItemByName("item_tactics_daedalus")
-	self:SpawnUnit(self:Flip(initial_positions[2].x), self:Flip(initial_positions[2].y), "npc_tactics_antimage", DOTA_TEAM_BADGUYS):AddItemByName("item_tactics_phase_boots")
+	unit = self:SpawnUnit(initial_positions[2].x, initial_positions[2].y, "npc_tactics_vengeful_spirit", DOTA_TEAM_GOODGUYS)
+	unit:AddItemByName("item_tactics_tpscroll"):SetCurrentCharges(10)
+	unit:AddItemByName("item_tactics_force_staff")
+	unit:AddItemByName("item_tactics_refresher_orb")
+	unit:AddItemByName("item_tactics_blink_dagger")
+	unit:AddItemByName("item_tactics_echo_sabre")
+	unit = self:SpawnUnit(self:Flip(initial_positions[2].x), self:Flip(initial_positions[2].y), "npc_tactics_antimage", DOTA_TEAM_BADGUYS)
+	unit:AddItemByName("item_tactics_tpscroll"):SetCurrentCharges(10)
+	unit:AddItemByName("item_tactics_force_staff")
+	unit:AddItemByName("item_tactics_refresher_orb")
+	unit:AddItemByName("item_tactics_blink_dagger")
+	unit:AddItemByName("item_tactics_echo_sabre")
 
-	self:SpawnUnit(initial_positions[3].x, initial_positions[3].y, "npc_tactics_techies", DOTA_TEAM_GOODGUYS):AddItemByName("item_tactics_wind_lace")
-	self:SpawnUnit(self:Flip(initial_positions[3].x), self:Flip(initial_positions[3].y), "npc_tactics_skywrath_mage", DOTA_TEAM_BADGUYS):AddItemByName("item_tactics_blade_of_attack")
+	unit = self:SpawnUnit(initial_positions[3].x, initial_positions[3].y, "npc_tactics_techies", DOTA_TEAM_GOODGUYS)
+	unit:AddItemByName("item_tactics_tpscroll"):SetCurrentCharges(10)
+	unit:AddItemByName("item_tactics_force_staff")
+	unit:AddItemByName("item_tactics_refresher_orb")
+	unit:AddItemByName("item_tactics_blink_dagger")
+	unit:AddItemByName("item_tactics_echo_sabre")
+	unit = self:SpawnUnit(self:Flip(initial_positions[3].x), self:Flip(initial_positions[3].y), "npc_tactics_skywrath_mage", DOTA_TEAM_BADGUYS)
+	unit:AddItemByName("item_tactics_tpscroll"):SetCurrentCharges(10)
+	unit:AddItemByName("item_tactics_force_staff")
+	unit:AddItemByName("item_tactics_refresher_orb")
+	unit:AddItemByName("item_tactics_blink_dagger")
+	unit:AddItemByName("item_tactics_echo_sabre")
 
-	self:SpawnUnit(initial_positions[4].x, initial_positions[4].y, "npc_tactics_undying", DOTA_TEAM_GOODGUYS):AddItemByName("item_tactics_blade_of_attack")
-	self:SpawnUnit(self:Flip(initial_positions[4].x), self:Flip(initial_positions[4].y), "npc_tactics_enigma", DOTA_TEAM_BADGUYS):AddItemByName("item_tactics_wind_lace")
+	unit = self:SpawnUnit(initial_positions[4].x, initial_positions[4].y, "npc_tactics_undying", DOTA_TEAM_GOODGUYS)
+	unit:AddItemByName("item_tactics_tpscroll"):SetCurrentCharges(10)
+	unit:AddItemByName("item_tactics_force_staff")
+	unit:AddItemByName("item_tactics_refresher_orb")
+	unit:AddItemByName("item_tactics_blink_dagger")
+	unit:AddItemByName("item_tactics_mystic_staff")
+	unit:AddItemByName("item_tactics_echo_sabre")
+	unit = self:SpawnUnit(self:Flip(initial_positions[4].x), self:Flip(initial_positions[4].y), "npc_tactics_enigma", DOTA_TEAM_BADGUYS)
+	unit:AddItemByName("item_tactics_tpscroll"):SetCurrentCharges(10)
+	unit:AddItemByName("item_tactics_force_staff")
+	unit:AddItemByName("item_tactics_refresher_orb")
+	unit:AddItemByName("item_tactics_blink_dagger")
+	unit:AddItemByName("item_tactics_mystic_staff")
+	unit:AddItemByName("item_tactics_echo_sabre")
 
-	self:SpawnUnit(initial_positions[5].x, initial_positions[5].y, "npc_tactics_dazzle", DOTA_TEAM_GOODGUYS):AddItemByName("item_tactics_ring_of_health")
-	self:SpawnUnit(self:Flip(initial_positions[5].x), self:Flip(initial_positions[5].y), "npc_tactics_necrolyte", DOTA_TEAM_BADGUYS):AddItemByName("item_tactics_travel_boots")
+	unit = self:SpawnUnit(initial_positions[5].x, initial_positions[5].y, "npc_tactics_dazzle", DOTA_TEAM_GOODGUYS)
+	unit:AddItemByName("item_tactics_tpscroll"):SetCurrentCharges(10)
+	unit:AddItemByName("item_tactics_force_staff")
+	unit:AddItemByName("item_tactics_refresher_orb")
+	unit:AddItemByName("item_tactics_blink_dagger")
+	unit:AddItemByName("item_tactics_mystic_staff")
+	unit:AddItemByName("item_tactics_mystic_staff")
+	unit = self:SpawnUnit(self:Flip(initial_positions[5].x), self:Flip(initial_positions[5].y), "npc_tactics_necrolyte", DOTA_TEAM_BADGUYS)
+	unit:AddItemByName("item_tactics_tpscroll"):SetCurrentCharges(10)
+	unit:AddItemByName("item_tactics_force_staff")
+	unit:AddItemByName("item_tactics_refresher_orb")
+	unit:AddItemByName("item_tactics_blink_dagger")
+	unit:AddItemByName("item_tactics_mystic_staff")
+	unit:AddItemByName("item_tactics_mystic_staff")
 
 	-- Spawn pawns
 	print("Placing pawns...")

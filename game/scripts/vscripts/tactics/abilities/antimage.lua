@@ -10,6 +10,7 @@ function tactics_blink:OnSpellStart()
 		local target = self:GetCursorPosition()
 		local caster_position = caster:GetBoardPosition()
 		local target_position = Tactics:GetGridCoordinatesFromWorld(target.x, target.y)
+		local end_position = Tactics:GetWorldCoordinatesFromGrid(target_position.x, target_position.y)
 		local player_id = caster:GetTacticsPlayerID()
 		local mana_cost = math.max(0, 2 - caster:GetManaCostReduction())
 
@@ -33,7 +34,7 @@ function tactics_blink:OnSpellStart()
 			-- Spend resources
 			caster:SetHasCastedThisTurn()
 			caster:ProcessCastModifiers()
-			TurnManager:SpendActionPoint(player_id)
+			caster:SpendActionPoint()
 			TurnManager:SpendMana(player_id, mana_cost)
 
 			-- Perform the spell
@@ -49,11 +50,12 @@ function tactics_blink:OnSpellStart()
 				ParticleManager:SetParticleControl(blink_out_pfx, 0, caster:GetAbsOrigin())
 				ParticleManager:ReleaseParticleIndex(blink_out_pfx)
 
-				local end_position = Tactics:GetWorldCoordinatesFromGrid(target_position.x, target_position.y)
 				FindClearSpaceForUnit(caster, Vector(end_position.x, end_position.y, 0), true)
 				caster:SetBoardPosition(target_position.x, target_position.y)
 				Tactics:SetGridContent(target_position.x, target_position.y, caster)
+			end)
 
+			Timers:CreateTimer(0.5, function()
 				local blink_in_pfx = ParticleManager:CreateParticle("particles/units/heroes/hero_antimage/antimage_blink_end.vpcf", PATTACH_CUSTOMORIGIN, nil)
 				ParticleManager:SetParticleControl(blink_in_pfx, 0, end_position)
 				ParticleManager:ReleaseParticleIndex(blink_in_pfx)

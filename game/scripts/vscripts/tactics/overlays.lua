@@ -636,3 +636,22 @@ function Tactics:CalculateSquareArea(x, y, range)
 
 	return area_grid
 end
+
+function Tactics:CalculateSquareEmptyArea(x, y, range)
+	local area_grid = {}
+	local min_x = math.max(x - range, 1)
+	local max_x = math.min(x + range, 12)
+	local min_y = math.max(y - range, 1)
+	local max_y = math.min(y + range, 12)
+
+	-- Return path
+	for i = min_x, max_x do
+		for j = min_y, max_y do
+			if self:IsEmpty(i, j) then
+				table.insert(area_grid, Vector(i, j, 0))
+			end
+		end
+	end
+
+	return area_grid
+end
